@@ -1,0 +1,43 @@
+     1                                  bits 32
+     2                                  global bubble_sort
+     3                                  
+     4                                  segment code use32 class = code public
+     5                                  
+     6                                      bubble_sort:
+     7                                          ;esp + 4 -> offset of the array
+     8                                          ;need to sort the array
+     9 00000000 8B742404                        mov esi, [esp + 4]
+    10 00000004 B301                            mov bl, 1
+    11                                          repeta:
+    12 00000006 B300                                mov bl, 0
+    13 00000008 B905000000                          mov ecx, 5
+    14 0000000D 49                                  dec ecx         ;minus the last element
+    15 0000000E E327                                jecxz loop_end1
+    16                                                  
+    17 00000010 BF00000000                          mov edi, 0  ;index from the iteration
+    18                                              loop_sort:
+    19 00000015 8B143E                                  mov edx, [esi + edi]        ;edx = [esi + edi]   
+    20 00000018 8B443E04                                mov eax, [esi + edi + 4]    ;eax = [esi]
+    21                                                  
+    22 0000001C 39C2                                    cmp edx, eax
+    23 0000001E 7E06                                    jle not_swap
+    24                                                  
+    25                                                  ;swap the values if edx > eax
+    26 00000020 50                                      push dword eax
+    27 00000021 89D0                                    mov eax, edx
+    28 00000023 5A                                      pop edx
+    29 00000024 B301                                    mov bl, 1   ;one mote step in loop
+    30                                                  
+    31                                                  not_swap:
+    32                                                                  
+    33                                                  ;edx is lower than eax
+    34 00000026 89143E                                  mov [esi + edi], edx        ;update the array from the memory
+    35 00000029 89443E04                                mov [esi + edi + 4], eax
+    36 0000002D 83C704                                  add edi, 4
+    37                                                  
+    38 00000030 E2E3                                loop loop_sort
+    39                                              
+    40 00000032 80FB01                              cmp bl, byte 1
+    41 00000035 74CF                                je repeta
+    42                                              loop_end1:
+    43 00000037 C20400                      ret 4

@@ -1,0 +1,110 @@
+     1                                  global start
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  extern exit, scanf, printf
+     6                                  import exit msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  extern bubble_sort
+    10                                  
+    11                                  
+    12                                  segment data use32 class = data public
+    13                                  
+    14 00000000 00000000                    n dd 0
+    15 00000004 00000000                    x dd 0
+    16 00000008 00<rept>                    arr times 20 db 0
+    17 0000001C 256400                      format_int db "%d", 0
+    18 0000001F 25642000                    output_format db "%d ", 0
+    19                                  
+    20                                  segment code use32 class = code public
+    21                                  
+    22                                      start:
+    23                                          ;read the number of elements
+    24 00000000 68[00000000]                    push dword n
+    25 00000005 68[1C000000]                    push dword format_int
+    26 0000000A FF15[00000000]                  call [scanf]
+    27 00000010 83C408                          add esp, 4 * 2
+    28                                          
+    29 00000013 8B0D[00000000]                  mov ecx, [n]
+    30 00000019 E322                            jecxz end_loop
+    31 0000001B BF[08000000]                    mov edi, arr
+    32                                          start_loop:
+    33 00000020 60                                  pushad
+    34                                              
+    35                                              ;read the value from the array
+    36 00000021 68[04000000]                        push dword x
+    37 00000026 68[1C000000]                        push dword format_int
+    38 0000002B FF15[00000000]                      call [scanf]
+    39 00000031 83C408                              add esp, 4 * 2
+    40                                              
+    41 00000034 61                                  popad
+    42                                              
+    43                                              ;store the value
+    44 00000035 A1[04000000]                        mov eax, dword [x]
+    45 0000003A AB                                  stosd   ;edi = eax, edi+=4.
+    46 0000003B E2E3                            loop start_loop
+    47                                          end_loop:
+    48                                          
+    49                                          ;the parameter needs to be the array offset
+    50 0000003D 68[08000000]                    push dword arr
+    51 00000042 E8(00000000)                    call bubble_sort
+    52                                          
+    53                                          ;need to sort the array
+    54                                          ;mov esi, arr
+    55                                          ;mov bl, 1
+    56                                          ;repeta:
+    57                                              ;mov bl, 0
+    58                                              ;mov ecx, [n]    ;lenght of the array
+    59                                              ;dec ecx         ;minus the last element
+    60                                              ;jecxz loop_end1
+    61                                                  
+    62                                              ;mov edi, 0  ;index from the iteration
+    63                                              ;loop_sort:
+    64                                                  ;mov edx, [esi + edi]        ;edx = [esi + edi]   
+    65                                                  ;mov eax, [esi + edi + 4]    ;eax = [esi]
+    66                                                  
+    67                                                  ;cmp edx, eax
+    68                                                  ;jle not_swap
+    69                                                  
+    70                                                  ;swap the values if edx > eax
+    71                                                  ;push dword eax
+    72                                                  ;mov eax, edx
+    73                                                  ;pop edx
+    74                                                  ;mov bl, 1   ;one mote step in loop
+    75                                                  
+    76                                                  ;not_swap:
+    77                                                                  
+    78                                                  ;edx is lower than eax
+    79                                                  ;mov [esi + edi], edx        ;update the array from the memory
+    80                                                  ;mov [esi + edi + 4], eax
+    81                                                  ;add edi, 4
+    82                                                  
+    83                                              ;loop loop_sort
+    84                                              
+    85                                              ;cmp bl, byte 1
+    86                                              ;je repeta
+    87                                              ;loop_end1:
+    88                                      
+    89                                          ;try to print to the screen the array
+    90 00000047 8B0D[00000000]                  mov ecx, [n]
+    91 0000004D E319                            jecxz loop_end2
+    92 0000004F BE[08000000]                    mov esi, arr
+    93                                          
+    94                                          print_loop:
+    95 00000054 AD                              lodsd   ;eax = [esi], esi += 4
+    96                                          
+    97 00000055 60                              pushad
+    98 00000056 50                              push eax
+    99 00000057 68[1F000000]                    push dword output_format
+   100 0000005C FF15[00000000]                  call [printf]
+   101 00000062 83C408                          add esp, 4 * 2
+   102 00000065 61                              popad
+   103                                          
+   104 00000066 E2EC                            loop print_loop
+   105                                          
+   106                                          loop_end2:
+   107                                      
+   108                                      
+   109 00000068 6A00                        push dword 0
+   110 0000006A FF15[00000000]              call [exit]
