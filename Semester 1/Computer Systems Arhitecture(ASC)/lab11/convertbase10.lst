@@ -1,0 +1,28 @@
+     1                                  %ifndef _CONVERTBASE10ASM_
+     2                                  %define _CONVERTBASE10ASM_
+     3                                  
+     4                                  convert_base_10:
+     5 00000000 66678B5C2404            	mov ebx, [esp + 4]; ebx = adresa sirului de biti
+     6 00000006 66BE00000000                mov esi, 0
+     7 0000000C 66B800000000                mov eax, 0; aici vom tine suma
+     8 00000012 66B900000000                mov ecx, 0; loop luuung
+     9                                      .repeta:
+    10 00000018 66BA00000000                    mov edx, 0; pentru a converti bitul la reprezentare pe doubleword
+    11 0000001E 678A1433                        mov dl, [ebx + esi]
+    12 00000022 80FA00                          cmp dl, 0
+    13 00000025 7418                            je end_loop
+    14                                          
+    15 00000027 6652                            push edx; salvam edx
+    16                                          
+    17 00000029 66BA02000000                    mov edx, 2
+    18 0000002F 66F7E2                          mul edx; eax = eax * 2 pentru ca urmeaza sa adaugam un nou bit (suportam maxim 32 de biti)
+    19                                          
+    20 00000032 665A                            pop edx; restauram edx
+    21                                          
+    22 00000034 6601D0                          add eax, edx
+    23 00000037 6683E830                        sub eax, '0'; eax = eax + 1(daca bitul este 1) sau ramane neschimbat(daca bitul este 0)
+    24 0000003B 6646                            inc esi; trecem la urmatorul caracter
+    25 0000003D E2D9                        loop .repeta
+    26                                      end_loop:
+    27 0000003F C20400                  	ret 4
+    28                                  %endif

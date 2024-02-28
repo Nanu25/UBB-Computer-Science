@@ -1,0 +1,16 @@
+     1                                  %ifndef _FACTORIAL_ASM_ ; continue if _FACTORIAL_ASM_ is undefined
+     2                                  %define _FACTORIAL_ASM_ ; make sure that it is defined
+     3                                                          ; otherwise, %include allows only one inclusion
+     4                                  
+     5                                  ;define the function
+     6                                  factorial: ; int _stdcall factorial(int n)
+     7 00000000 66B801000000                mov eax, 1
+     8 00000006 66678B4C2404                mov ecx, [esp + 4]
+     9                                      
+    10                                      repeat: 
+    11 0000000C 66F7E1                          mul ecx
+    12 0000000F E2FB                        loop repeat ; atention, the case ecx = 0 is not treated!
+    13                                  
+    14 00000011 C20400                      ret 4 ; in this case, 4 represents the number of bytes that need to be cleared from the stack (the parameter of the function)
+    15                                  
+    16                                  %endif

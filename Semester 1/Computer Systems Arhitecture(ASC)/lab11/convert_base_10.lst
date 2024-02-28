@@ -1,0 +1,33 @@
+     1                                  %ifndef _CONVERT_BASE_10_ASM_
+     2                                  %define _CONVERT_BASE_10_ASM_
+     3                                  
+     4                                  convert_base_10:
+     5                                  
+     6 00000000 66B801000000                mov eax, 1          ;puterea lui 2 corespunzatoare
+     7 00000006 66BE00000000                mov esi, 0          ;indicele din sir
+     8 0000000C 66678B5C2404                mov ebx, [esp + 4]  ;sirul
+     9 00000012 66B900000000                mov ecx, 0          ;pentru un loop lung
+    10 00000018 66BF00000000                mov edi, 0          ;rezultatul
+    11                                      
+    12                                      start_conversion:
+    13 0000001E 66BA00000000                    mov edx, 0      ;am un bit si vreau sa l transform in dd
+    14 00000024 678A1433                        mov dl, [ebx + esi] ;bitul actual
+    15 00000028 6683FA00                        cmp edx, 0          ;conditia de iesire
+    16 0000002C 7414                            je end_conversion
+    17                                         
+    18 0000002E 6683EF30                       sub edi, '0'         ;il transform in int
+    19 00000032 6683FF00                       cmp edi, 0           ;daca e 0 nu l adun la suma
+    20 00000036 7403                           je continue
+    21                                      
+    22 00000038 6601C7                         add edi, eax ;adun la rezultat
+    23                                         
+    24                                         continue:
+    25 0000003B 66D1E0                         shl eax, 1       ;eax = eax * 2
+    26 0000003E 6646                           inc esi          ;urmatorul bit
+    27 00000040 E2DC                        loop start_conversion
+    28                                   
+    29                                      end_conversion:
+    30 00000042 6689F8                      mov eax, edi    ;retin rezultaul in eax
+    31 00000045 C20400                      ret 4
+    32                                  
+    33                                  %endif

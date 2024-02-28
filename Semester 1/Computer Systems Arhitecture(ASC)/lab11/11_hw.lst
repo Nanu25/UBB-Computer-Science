@@ -1,0 +1,92 @@
+     1                                  global start
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  extern scanf, printf, exit
+     6                                  import printf msvcrt.dll
+     7                                  import exit msvcrt.dll
+     8                                  import scanf msvcrt.dll
+     9                                  
+    10                                  ;Multiple numbers in base 2 are read from the keyboard. Display these numbers in the base 16.
+    11                                  
+    12                                  %include "convertbase10.asm"
+     1                              <1> %ifndef _CONVERTBASE10ASM_
+     2                              <1> %define _CONVERTBASE10ASM_
+     3                              <1> 
+     4                              <1> convert_base_10:
+     5 00000000 8B5C2404            <1> 	mov ebx, [esp + 4]; ebx = adresa sirului de biti
+     6 00000004 BE00000000          <1>     mov esi, 0
+     7 00000009 B800000000          <1>     mov eax, 0; aici vom tine suma
+     8 0000000E B900000000          <1>     mov ecx, 0; loop luuung
+     9                              <1>     .repeta:
+    10 00000013 BA00000000          <1>         mov edx, 0; pentru a converti bitul la reprezentare pe doubleword
+    11 00000018 8A1433              <1>         mov dl, [ebx + esi]
+    12 0000001B 80FA00              <1>         cmp dl, 0
+    13 0000001E 7411                <1>         je end_loop
+    14                              <1>         
+    15 00000020 52                  <1>         push edx; salvam edx
+    16                              <1>         
+    17 00000021 BA02000000          <1>         mov edx, 2
+    18 00000026 F7E2                <1>         mul edx; eax = eax * 2 pentru ca urmeaza sa adaugam un nou bit (suportam maxim 32 de biti)
+    19                              <1>         
+    20 00000028 5A                  <1>         pop edx; restauram edx
+    21                              <1>         
+    22 00000029 01D0                <1>         add eax, edx
+    23 0000002B 83E830              <1>         sub eax, '0'; eax = eax + 1(daca bitul este 1) sau ramane neschimbat(daca bitul este 0)
+    24 0000002E 46                  <1>         inc esi; trecem la urmatorul caracter
+    25 0000002F E2E2                <1>     loop .repeta
+    26                              <1>     end_loop:
+    27 00000031 C20400              <1> 	ret 4
+    28                              <1> %endif
+    13                                  
+    14                                  segment data use32 class = data
+    15 00000034 00000000                    n dd 0
+    16 00000038 546865206E756D6265-         message_input db "The number of strings to read ", 0
+    16 00000041 72206F662073747269-
+    16 0000004A 6E677320746F207265-
+    16 00000053 61642000           
+    17                                      
+    18 00000057 256400                      format_int db "%d", 0
+    19 0000005A 257300                      format_str db "%s", 0
+    20 0000005D 00<rept>                    number times 31 db 0
+    21 0000007C 746865206E756D6265-         output db 'the number in base 16 = %x', 0
+    21 00000085 7220696E2062617365-
+    21 0000008E 203136203D20257800 
+    22                                      
+    23                                  segment code use32 class = code
+    24                                  
+    25                                      start:
+    26 00000000 68[38000000]                   push message_input   ;the message from the begin
+    27 00000005 FF15[00000000]                 call [printf]
+    28 0000000B 83C404                         add esp, 4 * 1
+    29                                         
+    30 0000000E 68[34000000]                   push dword n         ;numer of strings
+    31 00000013 68[57000000]                   push dword format_int
+    32 00000018 FF15[00000000]                 call [scanf]
+    33 0000001E 83C408                         add esp, 4 * 2
+    34                                        
+    35 00000021 8B0D[34000000]                 mov ecx, [n]         ;how many reads i need to perform
+    36 00000027 E330                           jecxz final
+    37                                         loop1:
+    38 00000029 60                                 pusha        ;push the registers on the stack
+    39                                             
+    40 0000002A 68[5D000000]                       push dword number        ;read the numbers by string format
+    41 0000002F 68[5A000000]                       push dword format_str
+    42 00000034 FF15[00000000]                     call [scanf]
+    43 0000003A 83C408                             add esp, 4 * 2
+    44                                             
+    45 0000003D 68[5D000000]                       push  number ;pun adresa stringului pe stiva
+    46 00000042 E8(00000000)                       call convert_base_10
+    47                                             
+    48 00000047 50                                 push eax             ;here is the number in base 10
+    49 00000048 68[7C000000]                       push dword output
+    50 0000004D FF15[00000000]                     call [printf]
+    51 00000053 83C408                             add esp, 4 * 2
+    52                                             
+    53 00000056 61                                 popa
+    54 00000057 E2D0                           loop loop1
+    55                                        
+    56                                          final:
+    57                                      
+    58 00000059 6A00                        push dword 0
+    59 0000005B FF15[00000000]              call [exit]

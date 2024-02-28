@@ -1,0 +1,10 @@
+     1                                  %ifndef _CHECKPARITYASM_
+     2                                  %define _CHECKPARITYASM_
+     3                                  
+     4                                  Check_parity:
+     5                                  
+     6 00000000 66678B442404                mov eax, [esp + 4]  ;numarul pe care l testez
+     7 00000006 6683E001                    and eax, 1
+     8 0000000A C20400                      ret 4
+     9                                  %endif
+    10                                      
