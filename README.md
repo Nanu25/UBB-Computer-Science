@@ -1,1 +1,1 @@
-# UBB-Computer-Sience
+# UBB-Computer-Science
