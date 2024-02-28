@@ -1,0 +1,65 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  extern exit, scanf, printf
+     5                                  import exit msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  
+     9                                  segment data use32 class = data
+    10                                     
+    11 00000000 476976652074686520-        print_message1 db "Give the first number", 13, 10, 0
+    11 00000009 6669727374206E756D-
+    11 00000012 6265720D0A00       
+    12 00000018 256400                     format_int db "%d", 0
+    13 0000001B 476976652074686520-        print_message2 db "Give the second numner", 13, 10, 0
+    13 00000024 7365636F6E64206E75-
+    13 0000002D 6D6E65720D0A00     
+    14 00000034 5468652073756D206F-        print_message3 db "The sum of the numbers", 13, 10, 0
+    14 0000003D 6620746865206E756D-
+    14 00000046 626572730D0A00     
+    15 0000004D 00000000                   n dd 0
+    16 00000051 00000000                   m dd 0
+    17 00000055 00000000                   s dd 0
+    18                                  
+    19                                  
+    20                                  segment code use32 class = code
+    21                                  
+    22                                      start:
+    23 00000000 68[00000000]                push dword print_message1
+    24 00000005 FF15[00000000]              call [printf]
+    25 0000000B 83C404                      add esp, 4 * 1
+    26                                      
+    27 0000000E 68[4D000000]                push dword n
+    28 00000013 68[18000000]                push dword format_int
+    29 00000018 FF15[00000000]              call [scanf]
+    30 0000001E 83C408                      add esp, 4 * 2
+    31                                      
+    32 00000021 68[1B000000]                push dword print_message2
+    33 00000026 FF15[00000000]              call [printf]
+    34 0000002C 83C404                      add esp, 4 * 1
+    35                                      
+    36 0000002F 68[51000000]                push dword m
+    37 00000034 68[18000000]                push dword format_int
+    38 00000039 FF15[00000000]              call [scanf]
+    39 0000003F 83C408                      add esp, 4 * 2
+    40                                      
+    41                                  
+    42 00000042 68[34000000]                push dword print_message3
+    43 00000047 FF15[00000000]              call [printf]
+    44 0000004D 83C404                      add esp, 4 * 1
+    45                                      
+    46                                      
+    47 00000050 A1[4D000000]                mov eax, [n]
+    48 00000055 0305[51000000]              add eax, [m]
+    49                                          
+    50 0000005B 50                          push dword eax
+    51 0000005C 68[18000000]                push dword format_int
+    52 00000061 FF15[00000000]              call [printf]
+    53 00000067 83C408                      add esp, 4 * 2
+    54                                      
+    55                                      
+    56                                      
+    57                                      
+    58 0000006A 6A00                        push dword 0
+    59 0000006C FF15[00000000]              call [exit]
