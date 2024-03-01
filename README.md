@@ -2,7 +2,7 @@
 ## Table of contents
 
 - 📕 Semester 1
-	- 🧮 [Algebra](1st%20Semester/Algebra)
+	- 🧮 [Algebra]
 	- 📊 [Mathematical Analysis](1st%20Semester/Mathematical%20Analysis)
-	- 🌒 [Computational Logic](1st%20Semester/Computational%20Logic)
+	- 🌒 [Computational Logic]
 	- 💾 [Computer Systems Architecture](1st%20Semester/Computer%20Systems%20Architecture)
