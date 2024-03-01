@@ -1,0 +1,18 @@
+     1                                  bits 32
+     2                                  global sum
+     3                                  
+     4                                  segment code use32 class = code
+     5                                      sum:
+     6                                          ;sum(a, b) - return a + b in eax
+     7                                          ;push parameterson the stack in reverse order
+     8                                          ;free memory in the procedure   
+     9                                          
+    10                                          ;stack
+    11                                          ;esp - return adress
+    12                                          ;esp + 4 - value of a
+    13                                          ;esp + 8 - value of b
+    14                                          
+    15 00000000 8B442404                        mov eax, [esp + 4]
+    16 00000004 03442408                        add eax, [esp + 8]
+    17                                          
+    18 00000008 C20800                          ret 4 * 2   ;2 parametrii
