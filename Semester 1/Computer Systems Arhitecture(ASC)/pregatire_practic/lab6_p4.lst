@@ -1,0 +1,120 @@
+     1                                  global start
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  extern scanf, fprintf, fopen, fclose, exit
+     6                                  import scanf msvcrt.dll
+     7                                  import fprintf msvcrt.dll
+     8                                  import fopen msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import exit msvcrt.dll
+    11                                  
+    12                                  ;A byte string s is given(read n numbers from console). Build the byte string  
+    13                                  ;d such that every byte d[i] is equal to the count of ones in the corresponding byte s[i] of s.
+    14                                  
+    15                                  segment data use32 class = data
+    16 00000000 666973332E74787400          file_name db "fis3.txt", 0
+    17 00000009 7700                        write_mode db "w", 0
+    18 0000000B FFFFFFFF                    fd dd -1
+    19 0000000F 00000000<rept>              s times 20 dd 0
+    20 0000005F 00000000<rept>              d times 20 dd 0
+    21 000000AF 00000000                    n dd 0
+    22 000000B3 00000000                    x dd 0
+    23 000000B7 20256400                    format_int db " %d", 0
+    24                                      
+    25                                  
+    26                                  segment code use32 class = code
+    27                                  
+    28                                      start:
+    29                                          ;open the file
+    30 00000000 68[09000000]                    push dword write_mode
+    31 00000005 68[00000000]                    push dword file_name
+    32 0000000A FF15[00000000]                  call [fopen]
+    33 00000010 83C408                          add esp, 4 * 2
+    34                                          
+    35                                          ;test if the file was open succefully
+    36 00000013 83F800                          cmp eax, dword 0
+    37 00000016 0F8492000000                    je eroare
+    38 0000001C A3[0B000000]                    mov [fd], eax
+    39                                          
+    40 00000021 68[AF000000]                    push dword n
+    41 00000026 68[B7000000]                    push dword format_int
+    42 0000002B FF15[00000000]                  call [scanf]
+    43 00000031 83C408                          add esp, 4 * 2
+    44                                          
+    45 00000034 8B0D[AF000000]                  mov ecx, dword [n]
+    46 0000003A BF[0F000000]                    mov edi, s
+    47 0000003F E348                            jecxz end_loop
+    48                                          
+    49                                          start_loop:
+    50                                          
+    51 00000041 60                              pusha   ;store all the registers
+    52                                          
+    53 00000042 68[B3000000]                    push dword x
+    54 00000047 68[B7000000]                    push dword format_int
+    55 0000004C FF15[00000000]                  call [scanf]
+    56 00000052 83C408                          add esp, 4 * 2
+    57                                         
+    58 00000055 61                              popa    ;restore the registers
+    59                                          
+    60                                          ;store the value
+    61 00000056 A1[B3000000]                    mov eax, dword [x]
+    62 0000005B AB                              stosd   ;edi = eax, edi++;
+    63                                          
+    64 0000005C E2E3                            loop start_loop
+    65                                          
+    66 0000005E BE[0F000000]                    mov esi, s
+    67 00000063 8B0D[AF000000]                  mov ecx, dword [n]
+    68 00000069 BF[5F000000]                    mov edi, d
+    69                                          ;nu mai pun jecxz pentru ca s ar fii executat prima data
+    70                                          loop_start1
+    70          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    71 0000006E AD                                  lodsd   ;eax = esi, esi++
+    72                                              
+    73                                              ;count the number of i in the eax reprezentation
+    74 0000006F BA00000000                          mov edx, 0
+    75                                              repeta:
+    76 00000074 89C3                                    mov ebx, eax
+    77 00000076 83FB00                                  cmp ebx, dword 0
+    78 00000079 7409                                    je end_repeta
+    79                                                  
+    80 0000007B 83E301                                  and ebx, 1
+    81 0000007E 01DA                                    add edx, ebx    ;if ebx = 1 then i add a new bite in the total number of bits
+    82                                                  
+    83 00000080 D1E8                                    shr eax, 1
+    84 00000082 EBF0                                    jmp repeta
+    85                                                  
+    86                                              end_repeta:
+    87                                          
+    88 00000084 89D0                                mov eax, edx
+    89 00000086 AB                                  stosd       ;edi = eax, edi++
+    90                                          
+    91 00000087 E2E5                            loop loop_start1
+    92                                          end_loop:
+    93                                          
+    94                                          ;print the array in the file
+    95 00000089 BE[5F000000]                    mov esi, d
+    96 0000008E 8B0D[AF000000]                  mov ecx, dword [n]
+    97                                          start_loop2:
+    98                                          
+    99 00000094 AD                              lodsd   ;eax = esi, esi++
+   100 00000095 60                              pusha
+   101                                          
+   102 00000096 50                              push dword eax
+   103 00000097 68[B7000000]                    push dword format_int
+   104 0000009C FF35[0B000000]                  push dword [fd]
+   105 000000A2 FF15[00000000]                  call [fprintf]
+   106 000000A8 83C40C                          add esp, 4 * 3
+   107                                          
+   108                                          
+   109 000000AB 61                              popa
+   110 000000AC E2E6                            loop start_loop2
+   111                                          
+   112                                          
+   113                                          
+   114                                          eroare:
+   115                                          
+   116                                          
+   117                                      
+   118 000000AE 6A00                        push dword 0
+   119 000000B0 FF15[00000000]              call [exit]

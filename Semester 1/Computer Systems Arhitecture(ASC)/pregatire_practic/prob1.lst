@@ -1,0 +1,105 @@
+     1                                  global start
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  extern fscanf, printf, fopen, fclose, exit
+     7                                  import fscanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  import fopen msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import exit msvcrt.dll
+    12                                  
+    13                                  ;1.	Se dă un șir de 10 numere în baza 16 în fișierul input.txt. 
+    14                                  ;Să se determine cifra minimă din fiecare număr.
+    15                                  ;Să se afișeze acest șir al cifrelor minime, în baza 10, pe ecran.
+    16                                  
+    17                                  
+    18                                  segment data use32 class = data
+    19 00000000 696E7075742E747874-         file_name db "input.txt", 0
+    19 00000009 00                 
+    20 0000000A 7200                        read_mode db "r", 0
+    21 0000000C FFFFFFFF                    fd dd -1
+    22 00000010 00000000                    x dd 0
+    23 00000014 00000000<rept>              sir times 10 dd 0
+    24 0000003C 255800                      format_hexa db "%X", 0
+    25 0000003F 25642000                    format_int db "%d ", 0
+    26 00000043 0A000000                    zece dd 10
+    27                                  
+    28                                  segment code use32 class = code
+    29                                  
+    30                                      start:
+    31                                      ;open the file
+    32 00000000 68[0A000000]                push dword read_mode
+    33 00000005 68[00000000]                push dword file_name
+    34 0000000A FF15[00000000]              call [fopen]
+    35 00000010 83C408                      add esp, 4 * 2
+    36                                      
+    37                                      ;check if the file was open corect
+    38 00000013 83F800                      cmp eax, 0
+    39 00000016 747E                        je eroare
+    40 00000018 A3[0C000000]                mov [fd], eax
+    41                                      
+    42 0000001D B90A000000                  mov ecx, dword 10   ;number of dwords i read
+    43 00000022 BF[14000000]                mov edi, sir        ;sirul de cifre minime
+    44                                      start_loop:
+    45                                      
+    46                                          ;read the number
+    47 00000027 60                              pusha
+    48                                          
+    49                                          ;read the number in hexa format
+    50 00000028 68[10000000]                    push dword x
+    51 0000002D 68[3C000000]                    push dword format_hexa
+    52 00000032 FF35[0C000000]                  push dword [fd]
+    53 00000038 FF15[00000000]                  call [fscanf]
+    54 0000003E 83C40C                          add esp, 4 * 3
+    55                                          
+    56 00000041 61                              popa
+    57                                          
+    58                                          ;store the number in eax
+    59 00000042 A1[10000000]                    mov eax, dword [x]
+    60 00000047 BB0A000000                      mov ebx, 10  ;cifra minima
+    61                                          repeta:
+    62 0000004C 83F800                             cmp eax, 0
+    63 0000004F 7413                               je end_repeta
+    64                                             
+    65 00000051 BA00000000                         mov edx, dword 0 ;to make the division on edx:eax
+    66 00000056 F735[43000000]                     div dword [zece]
+    67                                             
+    68                                             ;edx will be the last digit of eax, and eax /= 10.
+    69 0000005C 39DA                               cmp edx, ebx
+    70 0000005E 7F02                               jg not_good
+    71 00000060 89D3                               mov ebx, edx
+    72                                             
+    73                                             not_good:
+    74 00000062 EBE8                               jmp repeta
+    75                                             
+    76                                          end_repeta:
+    77 00000064 89D8                            mov eax, ebx
+    78 00000066 AB                              stosd   ;keep the minimum digit of the actual number
+    79                                          
+    80 00000067 E2BE                        loop start_loop
+    81                                      
+    82 00000069 BE[14000000]                mov esi, sir
+    83 0000006E B90A000000                  mov ecx, dword 10
+    84                                      loop_start1:
+    85 00000073 AD                          lodsd   ;actual dd which is a digit
+    86 00000074 60                          pusha
+    87                                      
+    88 00000075 50                          push dword eax
+    89 00000076 68[3F000000]                push dword format_int
+    90 0000007B FF15[00000000]              call [printf]
+    91 00000081 83C408                      add esp, 4 * 2
+    92                                      
+    93 00000084 61                          popa
+    94                                      
+    95 00000085 E2EC                        loop loop_start1
+    96                                      
+    97 00000087 FF35[0C000000]              push dword [fd]
+    98 0000008D FF15[00000000]              call [fclose]
+    99 00000093 83C404                      add esp, 4 * 1
+   100                                      
+   101                                      eroare:
+   102                                      
+   103 00000096 6A00                        push dword 0
+   104 00000098 FF15[00000000]              call [exit]

@@ -1,0 +1,41 @@
+     1                                  global start
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  extern scanf, printf, exit
+     6                                  import scanf msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  import exit msvcrt.dll
+     9                                  
+    10                                  ;A string of doublewords is given. Order in increasing order the string of the high words (most significant) from these doublewords. 
+    11                                  ;The low words (least significant) remain unchanged
+    12                                  
+    13                                  segment data use32 class = data
+    14 00000000 7856AB12CDAB561244-         sir dd 12AB5678h, 1256ABCDh, 12344344h 
+    14 00000009 433412             
+    15                                      lg equ ($ - sir) / 4
+    16 0000000C 00000000<rept>              new_sir times lg dd 0
+    17 00000018 257800                      format_hexa db "%x", 0
+    18                                      
+    19                                  
+    20                                  segment code use32 class = code
+    21                                  
+    22                                      start:
+    23                                      
+    24 00000000 BE[00000000]                mov esi, sir
+    25 00000005 BF[0C000000]                mov edi, new_sir
+    26 0000000A B903000000                  mov ecx, lg
+    27 0000000F E306                        jecxz end_repeta
+    28                                      repeta:
+    29 00000011 AD                              lodsd   ;eax - the current dword from esi, esi++
+    30                                          
+    31                                          ;selection sort, find the minimum number formed by the high words
+    32 00000012 C1E010                          shl eax, 16
+    33                                          
+    34                                      
+    35 00000015 E2FA                        loop repeta
+    36                                      end_repeta:
+    37                                      
+    38                                      
+    39 00000017 6A00                        push dword 0
+    40 00000019 FF15[00000000]              call [exit]
