@@ -1,0 +1,37 @@
+
+
+2. grep -c '^' passwd.fake
+
+3. grep -E '[a-zA-Z]{11,}' passwd.fake
+
+4. grep -E '^[^ey]' passwd.fake
+
+5. sed -E 's/dan/daniel/g' passwd.fake
+
+6. sed  '/dan/d' passwd.fake
+
+7. sed 's/[a-z]/\U&/g' passwd.fake
+
+8. sed 's/[aeiouAEIOU]\{3,\}/[&]/g' passwd.fake
+
+9. awk '{print NR,$0}' passwd.fake
+
+10. awk 'NR % 2 == 0 {print NR,$0}' passwd.fake
+
+11.  awk -F: '{print $5}' passwd.fake
+
+12. awk -F: '{print $5, $1, $6}' passwd.fake |awk -F/ '{print $1, $4}'
+
+LAB 4
+1. awk 'NR % 2 == 0 {print NR,$1, $2, $3, $4}' last.fake
+2. grep -Ev '[a-zA-Z0-9]' aaa.txt
+3.  sed -E 's/[0-9]+/&&/g' aaa.txt
+
+5. grep -E '^([^i]*i){2,4}[^i]*$' aaa.txt
+6. sed 's/[^ ]*$/ /g' aaa.txt
+7. awk 'NF % 2 == 1 {print NF, $(int((NF+1)/2))}' aaa.txt
+8. sed -E 's/^[a-z]+/ /g' aaa.txt
+
+
+Ultima de la hard nu neaparat corecta:
+ls -al | grep '^-' | awk ' {print $1, $9}' | awk -F'-' '{print $2, $7}'

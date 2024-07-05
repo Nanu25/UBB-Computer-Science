@@ -1,0 +1,50 @@
+1. cat angajati.txt
+2.  sed -n '5,10p' angajati.txt
+3. sed -n '8,$p' angajati.txt
+4,  sed -n '/Tudor/p' angajati.txt
+5.  sed -n '/Tudor /p' angajati.txt 
+6. sed '1,3d' angajati.txt
+7. sed  '/Popescu/d' angajati.txt
+8. sed '/Ion/,/Victor/d' angajati.txt
+9.  sed '$d' angajati.txt
+10. sed '/^$/d' angajati.txt
+11. sed 's/Olga/**Olga**/g' angajati.txt
+12. sed 's/19/18/g' angajati.txt
+13. sed -n 'w angajati.bak' angajati.txt
+14.  sed '3a Noua linie' angajati.txt
+15.  sed '/Adrian/a Alta linie noua' angajati.txt
+16. sed '$a TERMINAT' angajati.txt
+17. sed '2c SALARIAT PENSIONAT' angajati.txt
+18. sed '1i DATE DESPRE PERSONAL' angajati.txt
+19. sed  's/ /    /g' angajati.txt
+20.  sed  '5q' angajati.txt
+21. sed -n '3r text.txt' angajati.txt
+22. sed '5 e date' angajati.txt
+
+
+AWK:
+1. awk '{print $0}' angajati.txt
+2. awk '{print NR, $0}' angajati.txt
+3. awk '{print NF, $0}' angajati.txt
+4. awk  '{print $1, $2, $4}' angajati.txt
+5. awk '$1 ~ /T/ {print $0}' angajati.txt sau awk '/^T/ {print $0}' angajati.txt
+7. awk '$5 == 1949 {print $0}' angajati.txt
+8. awk '$5 < 2000 {print $0}' angajati.txt
+9.  awk 'length($0) > 42 {print $0}' angajati.txt
+10. awk 'BEGIN{nr=0} {nr = nr + 1} END {print nr}' angajati.txt
+11. awk 'BEGIN{suma=0} {suma+=$5} END {print suma}' angajati.txt
+12. awk 'BEGIN{print ARGC}' 2 3 4 s a
+14. awk 'END {print "Numele fisierului: ", FILENAME}' angajati.txt
+
+
+
+GREP LAB3:
+1. grep 'Tudor' angajati.txt
+2.grep '^Tudor' angajati.txt
+3.  grep '1942' grep_angajati.txt
+4. grep 1942$ grep_angajati.txt
+
+
+
+
+
