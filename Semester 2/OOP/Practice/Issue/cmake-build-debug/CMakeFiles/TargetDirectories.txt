@@ -1,0 +1,5 @@
+H:/OOP/Practice/TestProfa/cmake-build-debug/CMakeFiles/TestProfa.dir
+H:/OOP/Practice/TestProfa/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Practice/TestProfa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Practice/TestProfa/cmake-build-debug/CMakeFiles/TestProfa_autogen_timestamp_deps.dir
+H:/OOP/Practice/TestProfa/cmake-build-debug/CMakeFiles/TestProfa_autogen.dir
