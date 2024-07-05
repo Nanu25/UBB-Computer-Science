@@ -1,0 +1,4 @@
+fizica,teoria relativitaii,proposed,Alex,2
+matematica,numarul pi,accepted,Razvan,3
+chimie,combustie nucleara,proposed,Razvan,1
+premiul nobel,Elon Musk,accepted,Andrei,1

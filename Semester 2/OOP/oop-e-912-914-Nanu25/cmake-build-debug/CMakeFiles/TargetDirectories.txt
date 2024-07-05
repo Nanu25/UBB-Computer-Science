@@ -1,0 +1,5 @@
+H:/OOP/Labs/oop-e-912-914-Nanu25/cmake-build-debug/CMakeFiles/oop_e_912_914_Nanu25.dir
+H:/OOP/Labs/oop-e-912-914-Nanu25/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Labs/oop-e-912-914-Nanu25/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Labs/oop-e-912-914-Nanu25/cmake-build-debug/CMakeFiles/oop_e_912_914_Nanu25_autogen_timestamp_deps.dir
+H:/OOP/Labs/oop-e-912-914-Nanu25/cmake-build-debug/CMakeFiles/oop_e_912_914_Nanu25_autogen.dir
