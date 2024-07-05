@@ -1,0 +1,3 @@
+H:/OOP/Test2/Test RealEstate/cmake-build-debug/CMakeFiles/Test_RealEstate.dir
+H:/OOP/Test2/Test RealEstate/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Test2/Test RealEstate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
