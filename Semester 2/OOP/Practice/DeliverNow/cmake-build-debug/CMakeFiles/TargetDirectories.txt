@@ -1,0 +1,5 @@
+H:/OOP/Practice/DeliverNow/cmake-build-debug/CMakeFiles/DeliverNow.dir
+H:/OOP/Practice/DeliverNow/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Practice/DeliverNow/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Practice/DeliverNow/cmake-build-debug/CMakeFiles/DeliverNow_autogen_timestamp_deps.dir
+H:/OOP/Practice/DeliverNow/cmake-build-debug/CMakeFiles/DeliverNow_autogen.dir

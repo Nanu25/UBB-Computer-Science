@@ -1,0 +1,8 @@
+caine,Bulevardul unirii,10,10,1
+pisica,Bulevardul unirii,10,10,1
+bilete,Mihail,2,3,1
+Fotbal,Mihail,2,4,0
+Fotbal,Daa,2,4,0
+sdad,sad,3,3,0
+Mere,Bulevardul unirii,100,100,0
+Mere,Bulevarunirii,100,100,0
