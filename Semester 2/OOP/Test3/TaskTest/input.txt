@@ -1,0 +1,5 @@
+Solve_OOP_task | 120 | 1
+Food | 100 | 1
+Water_dog | 50 | 2
+Water_cat | 50 | 3
+Water_da | 50 | 2

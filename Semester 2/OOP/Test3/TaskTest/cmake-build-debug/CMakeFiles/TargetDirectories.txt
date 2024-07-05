@@ -1,0 +1,5 @@
+H:/OOP/Test3/TaskTest/cmake-build-debug/CMakeFiles/TaskTest.dir
+H:/OOP/Test3/TaskTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Test3/TaskTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Test3/TaskTest/cmake-build-debug/CMakeFiles/TaskTest_autogen_timestamp_deps.dir
+H:/OOP/Test3/TaskTest/cmake-build-debug/CMakeFiles/TaskTest_autogen.dir
