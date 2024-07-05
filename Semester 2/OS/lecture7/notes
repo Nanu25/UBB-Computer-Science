@@ -1,0 +1,22 @@
+read:
+-extracts data
+- wait when empty
+	-untill some data
+	-until no writers
+write:
+-add data
+-waits when full
+	-until some space
+	-until no readers
+
+open (FIFO)
+-waits untill FIFO opened for to complementary operation
+
+O_NDELAY (fcntl.h)  for open
+
+
+IPC
+-SHM
+-MSG
+-SEM
+
