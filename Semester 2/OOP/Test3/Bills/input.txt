@@ -1,0 +1,5 @@
+SuperBet; 0XS@E232; 2000; false
+Digi Sport; 23Xsdsa0d; 23.21; false
+E-On; @xCXC3323; 20.3; true
+Adsad; X03023423; 32.2; true
+Digi Sport; 23Xsdsa0d; 50.21; false
