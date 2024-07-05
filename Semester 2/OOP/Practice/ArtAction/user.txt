@@ -1,0 +1,3 @@
+Alex 1 collector
+Andrei 2 administrator
+Razvan 1 collector

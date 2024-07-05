@@ -1,0 +1,5 @@
+H:/OOP/Practice/ArtAction/cmake-build-debug/CMakeFiles/ArtAction.dir
+H:/OOP/Practice/ArtAction/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Practice/ArtAction/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Practice/ArtAction/cmake-build-debug/CMakeFiles/ArtAction_autogen_timestamp_deps.dir
+H:/OOP/Practice/ArtAction/cmake-build-debug/CMakeFiles/ArtAction_autogen.dir
