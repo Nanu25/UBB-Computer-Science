@@ -1,0 +1,3 @@
+H:/OOP/Test2/TestHospital/cmake-build-debug/CMakeFiles/TestHospital.dir
+H:/OOP/Test2/TestHospital/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Test2/TestHospital/cmake-build-debug/CMakeFiles/rebuild_cache.dir
