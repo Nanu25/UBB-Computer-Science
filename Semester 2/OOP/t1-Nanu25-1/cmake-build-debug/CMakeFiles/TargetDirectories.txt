@@ -1,0 +1,3 @@
+H:/OOP/Labs/t1-Nanu25-1/cmake-build-debug/CMakeFiles/t1_Nanu25_1.dir
+H:/OOP/Labs/t1-Nanu25-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Labs/t1-Nanu25-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
