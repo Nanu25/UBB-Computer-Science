@@ -1,0 +1,5 @@
+C++ | Oop language  | #include <iostream>
+Quadratic eq | Square root | x^2+2x=0
+Java | prog language web | www
+Jack Sparrow | Action Movie | The best movie
+Aaa | dsad | sads
