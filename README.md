@@ -7,3 +7,10 @@
 	- 🌒 Computational Logic
 	- 💾 Computer Systems Architecture
 	- 🍼 Fundamentals of Programming
+- 📕 Semester 2
+	- 🤖 Object-Oriented Programming
+	- 🐚 Operating Systems
+	- 🏝️ Dynamical Systems
+	- 🗺️ Graphs
+	- 🧠 Data Structures and Algorithms
+   	- 📐 Geometry
