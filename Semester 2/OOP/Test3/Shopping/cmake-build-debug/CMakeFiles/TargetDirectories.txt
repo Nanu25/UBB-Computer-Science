@@ -1,0 +1,5 @@
+H:/OOP/Test3/Shopping/cmake-build-debug/CMakeFiles/Shopping.dir
+H:/OOP/Test3/Shopping/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/OOP/Test3/Shopping/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/OOP/Test3/Shopping/cmake-build-debug/CMakeFiles/Shopping_autogen_timestamp_deps.dir
+H:/OOP/Test3/Shopping/cmake-build-debug/CMakeFiles/Shopping_autogen.dir
