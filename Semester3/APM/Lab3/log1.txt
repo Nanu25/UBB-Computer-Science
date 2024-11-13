@@ -1,0 +1,36 @@
+ExeStack:
+[(int v;print(v))]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[print(v), int v]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[print(v)]
+SymTable:
+{v=0}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[]
+SymTable:
+{v=0}
+Output:
+[0]
+File Table:
+
+

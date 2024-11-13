@@ -1,0 +1,346 @@
+ExeStack:
+[(String varf;(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))))]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))), String varf]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))))]
+SymTable:
+{varf=}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))), varf=src/files/test.in]
+SymTable:
+{varf=}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))), OpenRFile(varf)]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))), int varc]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))), ReadFile(varf, varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf))), print(varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);CloseRFile(varf)), ReadFile(varf, varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);CloseRFile(varf))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[CloseRFile(varf), print(varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[CloseRFile(varf)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0, 0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0, 0]
+File Table:
+
+
+ExeStack:
+[(String varf;(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))))]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))), String varf]
+SymTable:
+{}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(varf=src/files/test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))))]
+SymTable:
+{varf=}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))), varf=src/files/test.in]
+SymTable:
+{varf=}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))), OpenRFile(varf)]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+
+
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))), int varc]
+SymTable:
+{varf=src/files/test.in}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))), ReadFile(varf, varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf))), print(varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);CloseRFile(varf)), ReadFile(varf, varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[(print(varc);CloseRFile(varf))]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[CloseRFile(varf), print(varc)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[CloseRFile(varf)]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0, 0]
+File Table:
+src/files/test.in
+
+
+ExeStack:
+[]
+SymTable:
+{varf=src/files/test.in, varc=0}
+Output:
+[0, 0]
+File Table:
+
+
