@@ -1,0 +1,3 @@
+H:/RC/ChatServer/cmake-build-debug/CMakeFiles/ChatServer.dir
+H:/RC/ChatServer/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/RC/ChatServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
