@@ -1,0 +1,39 @@
+Program id:
+1
+ExeStack:
+[print(v), int v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+1
+ExeStack:
+[print(v)]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+1
+ExeStack:
+[]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
