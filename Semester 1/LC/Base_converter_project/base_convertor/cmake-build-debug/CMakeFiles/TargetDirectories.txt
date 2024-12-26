@@ -1,0 +1,3 @@
+C:/Users/alex_/Desktop/Base_converter_project/base_convertor/cmake-build-debug/CMakeFiles/base_convertor.dir
+C:/Users/alex_/Desktop/Base_converter_project/base_convertor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/alex_/Desktop/Base_converter_project/base_convertor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
