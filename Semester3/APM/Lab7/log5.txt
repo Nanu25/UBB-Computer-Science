@@ -1,0 +1,39 @@
+Program id:
+5
+ExeStack:
+[(new(v, 20);(Ref(Ref(int)) a;(new(a, v);(print(v);print(a))))), Ref(int) v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+5
+ExeStack:
+[(new(v, 20);(Ref(Ref(int)) a;(new(a, v);(print(v);print(a)))))]
+SymTable:
+{v=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+5
+ExeStack:
+[(Ref(Ref(int)) a;(new(a, v);(print(v);print(a)))), new(v, 20)]
+SymTable:
+{v=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+

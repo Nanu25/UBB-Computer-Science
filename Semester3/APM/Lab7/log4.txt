@@ -1,0 +1,404 @@
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))), String varf]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))))]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))), varf=test.in]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))), OpenRFile(varf)]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))), int varc]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))), ReadFile(varf, varc)]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))]
+SymTable:
+{varf=test.in, varc=231}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf))), print(varc)]
+SymTable:
+{varf=test.in, varc=231}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))]
+SymTable:
+{varf=test.in, varc=231}
+HeapTable
+{}
+Output:
+[231]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(print(varc);CloseRFile(varf)), ReadFile(varf, varc)]
+SymTable:
+{varf=test.in, varc=231}
+HeapTable
+{}
+Output:
+[231]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(print(varc);CloseRFile(varf))]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[231]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[CloseRFile(varf), print(varc)]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[231]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[CloseRFile(varf)]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[231, 0]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[]
+SymTable:
+{varf=test.in, varc=0}
+HeapTable
+{}
+Output:
+[231, 0]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))), String varf]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))))]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))), varf=test.in]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))), OpenRFile(varf)]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))), String varf]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(varf=test.in;(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))))]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))), varf=test.in]
+SymTable:
+{varf=}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(OpenRFile(varf);(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf)))))), OpenRFile(varf)]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+4
+ExeStack:
+[(int varc;(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))))]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
+Program id:
+4
+ExeStack:
+[(ReadFile(varf, varc);(print(varc);(ReadFile(varf, varc);(print(varc);CloseRFile(varf))))), int varc]
+SymTable:
+{varf=test.in}
+HeapTable
+{}
+Output:
+[]
+File Table:
+test.in
+
+
