@@ -1,0 +1,1391 @@
+Program id:
+12
+ExeStack:
+[(v=20;(wait(10);print(MUL(v, 10)))), int v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(v=20;(wait(10);print(MUL(v, 10))))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(wait(10);print(MUL(v, 10))), v=20]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(wait(10);print(MUL(v, 10)))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(10)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(9))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(9), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(9)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(8))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(8), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(8)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(7))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(7), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(7)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(6))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(6), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(6)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(5))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(5), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(5)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(4))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(4), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(4)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(3))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(3), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(3)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(2))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(2), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(2)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(1))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(1), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(1)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), (print(v);wait(0))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(0), print(v)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10)), wait(0)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(MUL(v, 10))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 170]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(wait(10);print(v*10)), v=20]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(10)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(10);wait(9))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(9), print(10)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(9)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(9);wait(8))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(8), print(9)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(8)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(8);wait(7))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(7), print(8)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(7)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(7);wait(6))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(6), print(7)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(6)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(6);wait(5))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(5), print(6)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(5)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(5);wait(4))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(4), print(5)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(4)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(4);wait(3))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(3), print(4)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(3)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(3);wait(2))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(2), print(3)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(2)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(2);wait(1))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(1), print(2)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(1)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(1);wait(0))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(0), print(1)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(0)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10)]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(v=20;(wait(10);print(v*10))), int v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(v=20;(wait(10);print(v*10)))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(wait(10);print(v*10)), v=20]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(wait(10);print(v*10))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(10)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(10);wait(9))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(9), print(10)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(9)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(9);wait(8))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(8), print(9)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(8)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(8);wait(7))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(7), print(8)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(7)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(7);wait(6))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(6), print(7)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(6)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(6);wait(5))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(5), print(6)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(5)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(5);wait(4))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(4), print(5)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(4)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(4);wait(3))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(3), print(4)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(3)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(3);wait(2))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(2), print(3)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(2)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(2);wait(1))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(1), print(2)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(1)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), (print(1);wait(0))]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(0), print(1)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10), wait(0)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(v*10)]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{v=20}
+HeapTable
+{}
+Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 200]
+File Table:
+
+

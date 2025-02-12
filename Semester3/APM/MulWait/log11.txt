@@ -1,0 +1,338 @@
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1))))), int v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1)))))]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1)))), int v2]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1))))]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1))), v1=2]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1)))]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1)), v2=3]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1) THEN(print(MUL(v1, v2))) ELSE(print(v1))]
+SymTable:
+{v1=2, v2=3}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))))), int v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))))]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))), int v2]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))))]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))), v1=2]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)), v2=3]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))]
+SymTable:
+{v1=2, v2=3}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))))), int v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int v2;(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))))]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))), int v2]
+SymTable:
+{v1=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v1=2;(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))))]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))), v1=2]
+SymTable:
+{v1=0, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v2=3;IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)))]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1)), v2=3]
+SymTable:
+{v1=2, v2=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[IF(v1 > 0) THEN(print(MUL(v1, v2))) ELSE(print(v1))]
+SymTable:
+{v1=2, v2=3}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(MUL(v1, v2))]
+SymTable:
+{v1=2, v2=3}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{v1=2, v2=3}
+HeapTable
+{}
+Output:
+[1]
+File Table:
+
+
