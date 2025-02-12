@@ -1,0 +1,7332 @@
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=20}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=20}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=20}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=20}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=21}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=21}
+HeapTable
+{1=20}
+Output:
+[1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=21}
+HeapTable
+{1=20}
+Output:
+[1, 21]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=21}
+HeapTable
+{1=20}
+Output:
+[1, 21]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=420}
+HeapTable
+{1=20}
+Output:
+[1, 21, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=420}
+HeapTable
+{1=20}
+Output:
+[1, 21, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v1;(Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))))]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))), Ref(int) v1]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (Ref(int) v2;(int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))))]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))), Ref(int) v2]
+SymTable:
+{v1=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int x;(int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))))]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))), int x]
+SymTable:
+{v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (int q;(new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))))]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))), int q]
+SymTable:
+{x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v1, 20);(new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))))]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))), new(v1, 20)]
+SymTable:
+{q=0, x=0, v1=(0, int), v2=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (new(v2, 30);(newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))), new(v2, 30)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(0, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (newLock(x);(fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))))]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))), newLock(x)]
+SymTable:
+{q=0, x=0, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))));(lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x))), fork(fork((lock(x);(HeapWriting(v1, ReadHeap(v1)-1);unlock(x)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (lock(x);(HeapWriting(v1, ReadHeap(v1)*10);unlock(x)))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x)), lock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), (HeapWriting(v1, ReadHeap(v1)*10);unlock(x))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x), HeapWriting(v1, ReadHeap(v1)*10)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=20, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))), unlock(x)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[((newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))));(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (newLock(q);(fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))))]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=200, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))), newLock(q)]
+SymTable:
+{q=0, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))));(lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q))), fork(fork((lock(q);(HeapWriting(v2, ReadHeap(v2)+5);unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (lock(q);(HeapWriting(v2, ReadHeap(v2)*10);unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), (HeapWriting(v2, ReadHeap(v2)*10);unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q), HeapWriting(v2, ReadHeap(v2)*10)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=30}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))), unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=300}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(NOP;(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))), NOP]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(x);(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))), lock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v1));(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q)))), print(ReadHeap(v1))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(unlock(x);(lock(q);(print(ReadHeap(v2));unlock(q))))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q))), unlock(x)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(lock(q);(print(ReadHeap(v2));unlock(q)))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q)), lock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(print(ReadHeap(v2));unlock(q))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q), print(ReadHeap(v2))]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[unlock(q)]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{q=2, x=1, v1=(1, int), v2=(2, int)}
+HeapTable
+{1=199, 2=305}
+Output:
+[199, 305]
+File Table:
+
+

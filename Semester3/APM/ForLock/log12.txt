@@ -1,0 +1,1404 @@
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))), Ref(int) a]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(new(a, 20);(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))))]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a))), new(a, 20)]
+SymTable:
+{a=(0, int)}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[(for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)));print(ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), for(v = 0; v < 3; v = v+1) fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (int v;(v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)))]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)), int v]
+SymTable:
+{a=(1, int)}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), (v=0;while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=0]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=0}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=1}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1, fork((print(v);v=v*ReadHeap(a)))]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1), v=v+1]
+SymTable:
+{a=(1, int), v=2}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a)), while (v < 3) (fork((print(v);v=v*ReadHeap(a)));v=v+1)]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[print(ReadHeap(a))]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
+Program id:
+12
+ExeStack:
+[]
+SymTable:
+{a=(1, int), v=3}
+HeapTable
+{1=20}
+Output:
+[0, 1, 2, 20]
+File Table:
+
+
