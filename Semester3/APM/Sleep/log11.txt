@@ -1,0 +1,858 @@
+Program id:
+11
+ExeStack:
+[(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until v == 3;(int x;(int y;(int z;(int w;print(v*10))))))), int v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until v == 3;(int x;(int y;(int z;(int w;print(v*10)))))))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(repeat((fork((print(v);v=v-1));v=v+1)) until v == 3;(int x;(int y;(int z;(int w;print(v*10)))))), v=0]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(repeat((fork((print(v);v=v-1));v=v+1)) until v == 3;(int x;(int y;(int z;(int w;print(v*10))))))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), repeat((fork((print(v);v=v-1));v=v+1)) until v == 3]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), ((fork((print(v);v=v-1));v=v+1);while (!v == 3) (fork((print(v);v=v-1));v=v+1))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1, fork((print(v);v=v-1))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1, fork((print(v);v=v-1))]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1, fork((print(v);v=v-1))]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=1}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1, fork((print(v);v=v-1))]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1, fork((print(v);v=v-1))]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1), v=v+1]
+SymTable:
+{v=2}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10))))), while (!v == 3) (fork((print(v);v=v-1));v=v+1)]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10)))))]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int x;(int y;(int z;(int w;print(v*10)))))]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int y;(int z;(int w;print(v*10)))), int x]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int y;(int z;(int w;print(v*10)))), int x]
+SymTable:
+{v=3}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int y;(int z;(int w;print(v*10))))]
+SymTable:
+{v=3, x=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int z;(int w;print(v*10))), int y]
+SymTable:
+{v=3, x=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int z;(int w;print(v*10)))]
+SymTable:
+{v=3, x=0, y=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int w;print(v*10)), int z]
+SymTable:
+{v=3, x=0, y=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(int w;print(v*10))]
+SymTable:
+{v=3, x=0, y=0, z=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), int w]
+SymTable:
+{v=3, x=0, y=0, z=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10)]
+SymTable:
+{v=3, w=0, x=0, y=0, z=0}
+HeapTable
+{}
+Output:
+[0, 1, 2]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{v=3, w=0, x=0, y=0, z=0}
+HeapTable
+{}
+Output:
+[0, 1, 2, 30]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(fork((v=v-1;(v=v-1;print(v))));(Sleep(10);print(v*10))), v=10]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v=10;(fork((v=v-1;(v=v-1;print(v))));(Sleep(10);print(v*10)))), int v]
+SymTable:
+{}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(v=10;(fork((v=v-1;(v=v-1;print(v))));(Sleep(10);print(v*10))))]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(fork((v=v-1;(v=v-1;print(v))));(Sleep(10);print(v*10))), v=10]
+SymTable:
+{v=0}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(fork((v=v-1;(v=v-1;print(v))));(Sleep(10);print(v*10)))]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(Sleep(10);print(v*10)), fork((v=v-1;(v=v-1;print(v))))]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(Sleep(10);print(v*10))]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[(Sleep(10);print(v*10))]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(10)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(10)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(9)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(9)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(8)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(8)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(7)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(7)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(6)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(6)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(5)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(4)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(3)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(2)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(1)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10), Sleep(0)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[print(v*10)]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8]
+File Table:
+
+
+Program id:
+11
+ExeStack:
+[]
+SymTable:
+{v=10}
+HeapTable
+{}
+Output:
+[8, 100]
+File Table:
+
+
