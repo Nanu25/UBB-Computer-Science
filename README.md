@@ -16,4 +16,7 @@
    	- 📐 Geometry
 - 📕 Semester 3
   	- 🛸 Advanced Programming Methods
-  	- 📊 Probability and Statistics
+  	- 📈 Probability and Statistics
+	- 🛜 Computer Networks
+   	- 📓 Databases
+   	- 📼 Functional and Logic Programming
