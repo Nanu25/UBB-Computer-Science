@@ -14,3 +14,6 @@
 	- 🗺️ Graphs
 	- 🧠 Data Structures and Algorithms
    	- 📐 Geometry
+- 📕 Semester 3
+  	- 🛸 Advanced Programming Methods
+  	- 📊 Probability and Statistics
