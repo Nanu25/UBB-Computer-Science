@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    filter: url(#liquid);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+h1:active {
+    transform: scale(5.2);
+}
+
+svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
