@@ -1,0 +1,81 @@
+@model ExamAsp.Models.ViewModels.AppViewModel
+
+@{
+    ViewData["Title"] = "Hotels";
+}
+
+<div class="container">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <h2 class="mb-4">Welcome, @Model.CurrentUserName</h2>
+
+    <div class="row">
+        <!-- All Hotels Section -->
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h3>All Hotels</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Hotel Name</th>
+                                    <th>Date</th>
+                                    <th>City</th>
+                                    <th>Available Rooms</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var hotel in Model.AllHotels)
+                                {
+                                    <tr>
+                                        <td>@hotel.hotelId</td>
+                                        <td>@hotel.hotelName</td>
+                                        <td>@hotel.date</td>
+                                        <td>@hotel.City</td>
+                                        <td>@hotel.availableRooms</td>
+                                        <td>
+                                            <form asp-action="MakeReservationHotel" method="post" style="display: inline;">
+                                                <input type="hidden" name="hotelId" value="@hotel.hotelId" />
+                                                <input type="hidden" name="reservationType" value="Hotel" />
+                                                <button type="submit" class="btn btn-primary btn-sm">Buy Ticket</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    @if (!Model.AllHotels.Any())
+                    {
+                        <p class="text-muted">No hotels available for the selected date and city.</p>
+                    }
+                </div>
+                    <!-- Add Cancel All Reservations Button -->
+                <div class="mb-3">
+                    <form asp-action="CancelAllReservations" method="post" style="display: inline;">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel ALL your reservations? This action cannot be undone.')">
+                            Cancel All My Reservations
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

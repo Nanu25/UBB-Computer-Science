@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h2>Login</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Login" method="post">
+                        <div class="form-group mb-3">
+                            <label for="username">Your Name:</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name" required>
+                            <label for="date">Date:</label>
+                            <input type="text" class="form-control" id="date" name="date" placeholder="Enter the date" required>
+                            <label for="city">City: </label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
+                        </div>
+                        <div class="text-danger mb-3">
+                            @if (!ViewData.ModelState.IsValid)
+                            {
+                                <div>@Html.ValidationSummary(false)</div>
+                            }
+                        </div>
+                        <button type="submit" class="btn btn-primary">Browse reservations</button>
+                    </form>
+                </div>
+                <div class="card-footer text-muted">
+                    <p>Please enter your name to start using the application.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
