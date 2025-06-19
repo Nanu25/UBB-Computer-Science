@@ -20,3 +20,9 @@
 	- 🛜 Computer Networks
    	- 📓 Databases
    	- 📼 Functional and Logic Programming
+- 📕 Semester 4  
+	- 🤖 Artificial Intelligence  
+	- 🕸️ Web Programming  
+	- 📇 Database Management Systems  
+	- 🎧 [MPP](https://github.com/Nanu25/GymJournal-)  
+	- 🐐 Software engineering  
