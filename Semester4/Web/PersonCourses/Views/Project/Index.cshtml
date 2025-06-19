@@ -1,0 +1,234 @@
+@model ExamAsp.Models.ViewModels.CoursesViewModel
+
+@{
+    ViewData["Title"] = "Projects Dashboard";
+}
+
+<div class="container">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <h2 class="mb-4">Welcome, @Model.CurrentUserName</h2>
+
+    <div class="row">
+        <!-- All Projects Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3>All Courses</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Participants</th>
+                                    <th> Grades </th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var course in Model.AllCourses)
+                                {
+                                    <tr>
+                                        <td>@course.Id</td>
+                                        <td>@course.CourseName</td>
+                                        <td>@course.Participants</td>
+                                        <td>@course.Grades</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User's Projects Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h3>Search Projects</h3>
+                </div>
+                <div class="card-body">
+                    <form id="searchForm">
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label for="SearchStudentGrade" class="form-label">Student Name:</label>
+                                <input type="text" class="form-control" id="SearchStudentGrade" name="SearchStudentGrade" required>
+                                <small class="form-text text-muted">Enter the name of the student</small>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                    
+                    <div class="mt-3">
+                        <!-- Search Results Container -->
+                        <div id="searchResults" style="display: none;">
+                            <h5>Search Results:</h5>
+                            <ul class="list-group" id="resultsList">
+                                <!-- Search results will be populated here -->
+                            </ul>
+                            <p id="noResultsMessage" style="display: none;">No results found.</p>
+                        </div>
+                        
+                        <!-- Default User Courses -->
+                        <div id="defaultCourses">
+                            @if (Model.UserCourses.Any())
+                            {
+                                <h5>Your Courses:</h5>
+                                <ul class="list-group">
+                                    @foreach (var project in Model.UserCourses)
+                                    {
+                                        <li class="list-group-item">@project.CourseName</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <p>You are not assigned to any projects yet.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h3>Assign Grade to Course</h3>
+                </div>
+               <div class="card-body">
+                    <form asp-action="AddGrade" method="post">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="GradeToAssign" class="form-label">Grade:</label>
+                                <input type="text" class="form-control" id="GradeToAssign" name="GradeToAssign" required>
+                                <small class="form-text text-muted">Enter the grade you want to assign</small>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Select Course:</label>
+                                <select class="form-control" name="CourseToAssign" required>
+                                    <option value="">-- Select a Course --</option>
+                                    @foreach (var course in Model.AllCourses)
+                                    {
+                                        <option value="@course.CourseName">@course.CourseName</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Add Grade</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchForm = document.getElementById('searchForm');
+        const searchInput = document.getElementById('SearchStudentGrade');
+        const searchResults = document.getElementById('searchResults');
+        const resultsList = document.getElementById('resultsList');
+        const noResultsMessage = document.getElementById('noResultsMessage');
+        const defaultCourses = document.getElementById('defaultCourses');
+        
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            
+            const studentName = searchInput.value.trim();
+            
+            if (!studentName) {
+                alert('Please enter a student name');
+                return;
+            }
+            
+            // Hide default courses and show search results container
+            defaultCourses.style.display = 'none';
+            searchResults.style.display = 'block';
+            
+            // Clear previous results
+            resultsList.innerHTML = '';
+            noResultsMessage.style.display = 'none';
+            
+            // Create a simplified courses array to avoid circular reference
+            const allCourses = @Html.Raw(Json.Serialize(Model.AllCourses.Select(c => new { 
+                Id = c.Id, 
+                CourseName = c.CourseName, 
+                Participants = c.Participants, 
+                Grades = c.Grades
+                })));
+            
+            console.log('All courses:', allCourses);
+            console.log('Searching for student:', studentName);
+            
+            // Filter courses where the student is enrolled - FIXED VERSION
+            const studentCourses = allCourses.filter(course => {
+                if (!course.participants) return false;  // lowercase 'p'
+                
+                const participants = course.participants.toLowerCase();  // lowercase 'p'
+                const searchName = studentName.toLowerCase();
+                
+                console.log(`Checking course: ${course.courseName}`);  // lowercase 'c'
+                console.log(`Participants: "${participants}"`);
+                console.log(`Searching for: "${searchName}"`);
+                console.log(`Match found: ${participants.includes(searchName)}`);
+                
+                return participants.includes(searchName);
+            });
+
+            console.log('Found courses for student:', studentCourses);
+            console.log('Number of courses found:', studentCourses.length);
+            
+            // Display results
+            if (studentCourses.length > 0) {
+                studentCourses.forEach(course => {
+                    console.log('Processing course:', course);
+                    const listItem = document.createElement('li');
+                    listItem.className = 'list-group-item';
+                    listItem.innerHTML = `
+                        <strong>${course.courseName}</strong><br>
+                        <small class="text-muted">Participants: ${course.participants}</small><br>
+                        <small class="text-muted">Grades: ${course.grades || 'No grades yet'}</small>
+                    `;
+                    resultsList.appendChild(listItem);
+                });
+            } else {
+                console.log('No courses found for student:', studentName);
+                noResultsMessage.textContent = `No courses found for student "${studentName}"`;
+                noResultsMessage.style.display = 'block';
+            }
+        });
+        
+        // Clear results when input is empty
+        searchInput.addEventListener('input', function() {
+            if (!this.value.trim()) {
+                searchResults.style.display = 'none';
+                defaultCourses.style.display = 'block';
+            }
+        });
+    });
+   </script>
+}
