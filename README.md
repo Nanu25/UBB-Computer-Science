@@ -24,5 +24,5 @@
 	- 🤖 Artificial Intelligence  
 	- 🕸️ Web Programming  
 	- 📇 Database Management Systems  
-	- 🎧 [MPP](https://github.com/Nanu25/GymJournal-)  
+	- 🎧 [MPP](https://github.com/Nanu25/GymJournal)  
 	- 🐐 Software engineering  
