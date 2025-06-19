@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <table id="sortableTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>20</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>35</td>
+                <td>Tokyo</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>40</td>
+                <td>Beijing</td>
+            </tr>
+
+            <tr>
+                <td>Ion</td>
+                <td>20</td>
+                <td>Cluj</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="number" id="ageInput" placeholder="Age">
+        <input type="text" id="cityInput" placeholder="City">
+        <button id="addRowButton">Add Row</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

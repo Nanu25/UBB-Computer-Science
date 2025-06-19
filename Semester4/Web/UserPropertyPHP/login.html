@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="max-width: 400px; margin: 100px auto;">
+            <h2>Login</h2>
+            
+            <div id="step1">
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" />
+                </div>
+                <button onclick="checkUser()">Next</button>
+            </div>
+
+            <div id="step2" style="display: none;">
+                <div class="form-group">
+                    <label>Secret Question:</label>
+                    <p id="question"></p>
+                </div>
+                <div class="form-group">
+                    <label>Answer:</label>
+                    <input type="text" id="answer" placeholder="Enter your answer" />
+                </div>
+                <button onclick="login()">Login</button>
+                <button onclick="goBack()">Back</button>
+            </div>
+
+            <div id="message" style="margin-top: 10px; color: red;"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentUser = null;
+
+        function checkUser() {
+            const username = document.getElementById('username').value;
+            if (!username) {
+                showMessage('Please enter username');
+                return;
+            }
+
+            fetch(`api/login.php?action=getUser&username=${username}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        currentUser = data.user;
+                        document.getElementById('question').textContent = data.user.secretQuestion;
+                        document.getElementById('step1').style.display = 'none';
+                        document.getElementById('step2').style.display = 'block';
+                    } else {
+                        showMessage('User not found');
+                    }
+                })
+                .catch(() => showMessage('Connection error'));
+        }
+
+        function login() {
+            const answer = document.getElementById('answer').value;
+            if (!answer) {
+                showMessage('Please enter answer');
+                return;
+            }
+
+            fetch('api/login.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'verifyAnswer',
+                    userId: currentUser.id,
+                    secretAnswer: answer
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    window.location.href = 'index.html';
+                } else {
+                    showMessage('Wrong answer');
+                }
+            })
+            .catch(() => showMessage('Connection error'));
+        }
+
+        function goBack() {
+            document.getElementById('step1').style.display = 'block';
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('answer').value = '';
+            showMessage('');
+        }
+
+        function showMessage(msg) {
+            document.getElementById('message').textContent = msg;
+        }
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Project Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Software Developer Project Management System</h1>
+        </header>
+
+        <!-- User Login Section -->
+        <section class="user-section">
+            <div class="card">
+                <h2>Enter Your Name</h2>
+                <div class="form-group">
+                    <input type="text" id="userName" placeholder="Enter your name" />
+                    <button onclick="setUser()">Set User</button>
+                </div>
+                <div id="currentUser" class="user-display"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <button onclick="showAllProjects()" class="nav-btn">All Projects</button>
+            <button onclick="showUserProjects()" class="nav-btn" id="userProjectsBtn" disabled>My Projects</button>
+            <button onclick="showDevelopers()" class="nav-btn">All Developers</button>
+            <button onclick="showAssignSection()" class="nav-btn">Assign Developer</button>
+        </nav>
+
+        <!-- All Projects Section -->
+        <section id="allProjectsSection" class="content-section">
+            <div class="card">
+                <h2>All Projects</h2>
+                <div id="allProjectsList" class="projects-list"></div>
+                <div class="countProjects">
+                    <p>Total Projects: <span id="totalProjectsCount">0</span></p>
+                </div>
+                </div>
+        </section>
+
+        <!-- User Projects Section -->
+        <section id="userProjectsSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>My Projects</h2>
+                <div id="userProjectsList" class="projects-list"></div>
+            </div>
+        </section>
+
+        <!-- Developers Section -->
+        <section id="developersSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>All Developers</h2>
+                <div class="form-group">
+                    <input type="text" id="skillFilter" placeholder="Filter by skill (e.g., Java)" />
+                    <button onclick="filterDevelopersBySkill()">Filter</button>
+                    <button onclick="showAllDevelopers()">Show All</button>
+                </div>
+                <div id="developersList" class="developers-list"></div>
+            </div>
+        </section>
+
+        <!-- Assign Developer Section -->
+        <section id="assignSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>Assign Developer to Projects</h2>
+                <form id="assignForm">
+                    <div class="form-group">
+                        <label for="developerName">Developer Name:</label>
+                        <input type="text" id="developerName" placeholder="Enter developer name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="projectNames">Project Names (comma-separated):</label>
+                        <textarea id="projectNames" placeholder="Enter project names separated by commas" required></textarea>
+                    </div>
+                    <button type="submit">Assign Developer</button>
+                </form>
+                <div id="assignResults" class="results"></div>
+            </div>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <!-- Messages -->
+        <div id="messages" class="messages"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

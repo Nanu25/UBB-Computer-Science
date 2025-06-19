@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Project Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Websites Documents</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <button onclick="showAllWebSites()" class="nav-btn">All Websites</button>
+        </nav>
+
+        <!-- All Projects Section -->
+        <section id="allWebSitesSection" class="content-section">
+            <div class="card">
+                <h2>All Websites</h2>
+                <div id="allWebSitesList" class="websites-list"></div>
+            </div>
+        </section>
+
+        <section id="SearchSection" class="search-section">
+            <div class="card">
+                <h2>Search Websites KeyWords</h2>
+                <form id="SearchForm" onsubmit="searchWebsites(event)">
+                    <div class="form-group">
+                        <input type="text" id="KeyWords" placeholder="Enter exactly 3 keywords separated by spaces" required />
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="SearchResults" class="results"></div>
+            </div>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <!-- Messages -->
+        <div id="messages" class="messages"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

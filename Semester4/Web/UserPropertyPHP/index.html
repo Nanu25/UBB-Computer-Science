@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Project Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Property Management System</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <button onclick="showAllProperties()" class="nav-btn">All Properties</button>
+            <button onclick="showAssignSection()" class="nav-btn">Add Property To Current User</button>
+        </nav>
+
+        <!-- All Projects Section -->
+        <section id="allProjectsSection" class="content-section">
+            <div class="card">
+                <h2>All Projects</h2>
+                <div class="form-group">
+                    <input type="text" id="skillFilter" placeholder="Search by description" />
+                    <button onclick="searchProperty()">Search</button>
+                </div>
+                <div id="allProjectsList" class="projects-list"></div>
+                <div class="countProjects">
+                    <p>Total Projects: <span id="totalProjectsCount">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Projects Section -->
+        <section id="userProjectsSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>My Projects</h2>
+                <div id="userProjectsList" class="projects-list"></div>
+            </div>
+        </section>
+
+        <!-- Developers Section -->
+        <section id="developersSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>Search Property</h2>
+                <div class="form-group">
+                    <input type="text" id="skillFilter" placeholder="Search by description" />
+                    <button onclick="filterDevelopersBySkill()">Filter</button>
+                    <button onclick="showAllDevelopers()">Show All Properties</button>
+                </div>
+                <div id="developersList" class="developers-list"></div>
+            </div>
+        </section>
+
+        <!-- Assign Developer Section -->
+        <section id="assignSection" class="content-section" style="display: none;">
+            <div class="card">
+                <h2>New Property</h2>
+                <form id="assignForm">
+                    <div class="form-group">
+                        <label for="propertyAddress">Property Address:</label>
+                        <input type="text" id="propertyAddress" placeholder="Enter property address" required />
+                         <label for="propertyDescription">Property Description:</label>
+                        <input type="text" id="propertyDescription" placeholder="Enter property description" required />
+                   
+                    </div>
+                    <button type="submit">Add Property</button>
+                </form>
+                <div id="assignResults" class="results"></div>
+            </div>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <!-- Messages -->
+        <div id="messages" class="messages"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> -->

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Bar Chart</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #chart-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 300px;
+      border-left: 2px solid #333;
+      border-bottom: 2px solid #333;
+      margin-top: 30px;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .bar {
+      width: 40px;
+      background-color: #3498db;
+      transition: height 1s ease-in-out;
+    }
+
+    input {
+      padding: 8px;
+      width: 300px;
+    }
+
+    button {
+      padding: 8px 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter numbers separated by commas:</h2>
+  <input type="text" id="numbers-input" placeholder="e.g. 1, 2, 3, 4, 5">
+  <button id="generate-chart">Generate Chart</button>
+
+  <div id="chart-container"></div>
+
+  <script>
+    $(document).ready(function() {
+      // Store previous values
+      let previousValues = [];
+      let previousMax = 0; // Store the previous max value
+      
+      $("#generate-chart").click(function() {
+        const input = $("#numbers-input").val();
+        const numbers = input.split(",").map(num => parseInt(num.trim())).filter(num => !isNaN(num));
+        const max = Math.max(...numbers, 1); 
+        
+        const container = $("#chart-container");
+        const existingBars = container.find(".bar");
+
+        if(existingBars.length == numbers.length) {
+          for (let i = 0; i < numbers.length; i++) {
+            if (i >= previousValues.length || numbers[i] !== previousValues[i] || max !== previousMax) {
+              const heightPercent = (numbers[i] / max) * 100;
+              $(existingBars[i]).css("height", heightPercent + "%");
+            }
+          }
+        }else if(existingBars.length > numbers.length) {
+          for(let i = 0; i < numbers.length; i++) {
+            if(numbers[i] != previousValues[i] || max !== previousMax) {
+              const heightPercent = (numbers[i] / max) * 100;
+              $(existingBars[i]).css("height", heightPercent + "%");
+            }
+          }
+          //delete extra chart bar
+          for(let i = numbers.length; i < existingBars.length; i++) {
+            setTimeout(() => {
+              $(existingBars[i]).css("height", "0%");
+            }, 1000); 
+          }
+        }else {
+            for(let i = 0; i < existingBars.length; i++) {
+              const heightPercent = (numbers[i] / max) * 100;
+              $(existingBars[i]).css("height", heightPercent + "%");
+            }
+            // Add new bars for new numbers
+            for(let i = existingBars.length; i < numbers.length; i++) {
+              const heightPercent = (numbers[i] / max) * 100;
+              const bar = $("<div class='bar'></div>").css("height", heightPercent + "%").appendTo(container);
+              setTimeout(() => {
+                bar.css("height", heightPercent + "%");
+              }, 1000); // Delay to allow for the initial height to be set
+              // bar.animate({height: heightPercent + "%"}, 1000);
+            }
+        }
+
+        // Store current values for next comparison
+        previousValues = [...numbers];
+        previousMax = max; // Store the current max value
+      });
+    });
+  </script>
+
+</body>
+</html>
