@@ -1,0 +1,199 @@
+.logs-container {
+  max-width: 1200px; /* Increased from 1000px */
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Add this new class for the header section with Add Log button */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  text-align: left; /* Changed from center to left for better layout with button */
+  color: #3f51b5;
+  font-size: 28px;
+  margin: 0; /* Reset margin to work better with flex layout */
+}
+
+/* Style for the Add Log button */
+.add-log-btn {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-log-btn:hover {
+  background-color: #43a047;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #f5f7ff;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-group input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.filter-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+  background-color: white;
+}
+
+.filter-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-size: 15px; /* Slightly larger font */
+}
+
+.logs-table th, .logs-table td {
+  padding: 14px 18px; /* Increased padding */
+  text-align: left;
+}
+
+.logs-table th {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 500;
+}
+
+.logs-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.logs-table tr:hover {
+  background-color: #e8eaf6;
+}
+
+.logs-table a {
+  color: #3f51b5;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.logs-table a:hover {
+  text-decoration: underline;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete:hover {
+  background-color: #d32f2f;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #303f9f;
+}
+
+.pagination button:disabled {
+  background-color: #c5cae9;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: 500;
+  color: #555;
+}
+
+p a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #2e7d32;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}

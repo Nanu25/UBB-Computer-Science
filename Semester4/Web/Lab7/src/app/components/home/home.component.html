@@ -1,0 +1,23 @@
+<div class="home-container">
+    <h1>Welcome, {{ authService.currentUsername }}!</h1>
+    
+    <div class="actions">
+      <div class="action-card">
+        <h2>View Logs</h2>
+        <p>Browse and manage your log entries</p>
+        <button routerLink="/logs">View Logs</button>
+      </div>
+      
+      <div class="action-card">
+        <h2>Add New Log</h2>
+        <p>Create a new log entry</p>
+        <button routerLink="/add-log">Add Log</button>
+      </div>
+      
+      <div class="action-card logout">
+        <h2>Log Out</h2>
+        <p>End your current session</p>
+        <button (click)="logout()">Log Out</button>
+      </div>
+    </div>
+  </div>

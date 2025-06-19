@@ -1,0 +1,79 @@
+<div class="logs-container">
+  <div class="header-section">
+    <h1>Log Reports</h1>
+    <button class="add-log-btn" [routerLink]="['/add-log']">
+      Add New Log
+    </button>
+  </div>
+  
+  <div class="filters">
+    <div class="filter-group">
+      <label for="type">Type:</label>
+      <input type="text" id="type" [(ngModel)]="type" (input)="onFilterChange()">
+    </div>
+    
+    <div class="filter-group">
+      <label for="severity">Severity:</label>
+      <select id="severity" [(ngModel)]="severity" (change)="onFilterChange()">
+        <option value="">All</option>
+        <option value="debug">Debug</option>
+        <option value="warning">Warning</option>
+        <option value="notice">Notice</option>
+        <option value="error">Error</option>
+        <option value="critical">Critical</option>
+      </select>
+    </div>
+
+
+    
+    <div class="filter-group">
+      <label>
+        <input type="radio" name="view" value="my" [(ngModel)]="view" (change)="onFilterChange()">
+        My Logs
+      </label>
+      <label>
+        <input type="radio" name="view" value="all" [(ngModel)]="view" (change)="onFilterChange()">
+        All Logs
+      </label>
+    </div>
+  </div>
+
+  <div class="user-stats">
+    <span class="stat-label">My logs on this page:</span>
+    <span class="stat-value">{{ getUserLogsCount() }}</span>
+  </div>
+  
+  <table class="logs-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Severity</th>
+        <th>Date</th>
+        <th>Message</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{ log.log_id }}</td>
+        <td>{{ log.type }}</td>
+        <td>{{ log.severity }}</td>
+        <td>{{ log.date }}</td>
+        <td>{{ log.message }}</td>
+        <td>
+          <a *ngIf="log.user_id == authService.currentUserId" [routerLink]="['/edit-log', log.log_id]">Edit</a>
+          <button *ngIf="log.user_id == authService.currentUserId" class="delete" (click)="deleteLog(log.log_id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <span class="page-info">Page {{currentPage}}</span>
+    <button (click)="nextPage()" [disabled]="isLastPage()">Next</button>
+  </div>
+  
+  <p><a routerLink="/home">Back to Home</a></p>
+</div>
