@@ -25,4 +25,8 @@
 	- 🕸️ Web Programming  
 	- 📇 Database Management Systems  
 	- 🎧 [MPP](https://github.com/Nanu25/GymJournal)  
-	- 🐐 Software engineering  
+	- 🐐 Software engineering
+   		- initial project: Duo (https://github.com/Nanu25/UBB-SE-2025-Messi)
+       		- swap project: Market Minds (https://github.com/Nanu25/UBB-SE-2025-MarketMinds)
+           	- first merge: Market Messi (https://github.com/Nanu25/UBB-SE-2025-MarketMessi)
+           	- Final merge: Marketplace (https://github.com/Nanu25/UBB-SE-2025-Marketplace)
