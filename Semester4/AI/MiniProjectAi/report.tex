@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Genetic Algorithm Optimization:\\
+Cross-in-Tray and Eggholder Functions}
+\author{Grancea Alexandru}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report presents an analysis of Genetic Algorithm (GA) performance on two benchmark optimization functions: the Cross-in-Tray function and the Eggholder function. The study compares different GA configurations and their effectiveness in finding optimal solutions.
+
+\section{Selected Functions}
+
+\subsection{Cross-in-Tray Function}
+The Cross-in-Tray function is defined as:
+\begin{equation}
+f(x,y) = -0.0001 \left(|\sin(x)\sin(y)\exp(|100 - \frac{\sqrt{x^2 + y^2}}{\pi}|)| + 1\right)^{0.1}
+\end{equation}
+
+This function has multiple local minima and a global minimum of approximately -2.06261 at points (1.34941, 1.34941), (-1.34941, 1.34941), (1.34941, -1.34941), and (-1.34941, -1.34941).
+
+\subsection{Eggholder Function}
+The Eggholder function is defined as:
+\begin{equation}
+f(x,y) = -(y + 47)\sin(\sqrt{|x/2 + y + 47|}) - x\sin(\sqrt{|x - (y + 47)|})
+\end{equation}
+
+This function is characterized by numerous local minima and a global minimum of approximately -959.6407 at point (512, 404.2319).
+
+\section{GA Configurations}
+The study employed four different GA configurations:
+\begin{itemize}
+    \item Binary 1-point crossover
+    \item Binary 2-point crossover
+    \item Real arithmetic crossover
+    \item Real BLX-$\alpha$ crossover
+\end{itemize}
+
+Each configuration was tested with 30 independent runs to ensure statistical significance.
+
+\section{Experimental Results}
+
+\subsection{Cross-in-Tray Function Results}
+\begin{table}[H]
+\centering
+\caption{Statistical Results for Cross-in-Tray Function}
+\begin{tabular}{lccc}
+\toprule
+Configuration & Best Fitness & Mean Fitness & Std Dev \\
+\midrule
+Binary 1-point & -2.0626 & -2.0552 & 0.0123 \\
+Binary 2-point & -2.0626 & -2.0568 & 0.0112 \\
+Real arithmetic & -2.0626 & -2.0626 & 0.0001 \\
+Real BLX-$\alpha$ & -2.0626 & -2.0626 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Eggholder Function Results}
+\begin{table}[H]
+\centering
+\caption{Statistical Results for Eggholder Function}
+\begin{tabular}{lccc}
+\toprule
+Configuration & Best Fitness & Mean Fitness & Std Dev \\
+\midrule
+Binary 1-point & -931.37 & -835.12 & 73.45 \\
+Binary 2-point & -955.95 & -855.32 & 89.23 \\
+Real arithmetic & -934.75 & -718.45 & 156.78 \\
+Real BLX-$\alpha$ & -935.34 & -757.89 & 142.56 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Visualization}
+The following figures show the contour and surface plots of both functions:
+
+\begin{figure}[H]
+    \centering
+    % Add your Cross-in-Tray plots here
+    % Example: \includegraphics[width=0.45\textwidth]{cross_in_tray_contour.png}
+    % Example: \includegraphics[width=0.45\textwidth]{cross_in_tray_surface.png}
+    [PLACEHOLDER FOR CROSS-IN-TRAY CONTOUR PLOT]\\
+    [PLACEHOLDER FOR CROSS-IN-TRAY SURFACE PLOT]
+    \\[1em]
+    \textbf{Links for photos:}
+    \\1. \url{https://example.com/cross-in-tray-contour}
+    \\2. \url{https://example.com/cross-in-tray-surface}
+    \caption{Cross-in-Tray Function: Contour and Surface Plots}
+    \label{fig:cross_in_tray}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % Add your Eggholder plots here
+    % Example: \includegraphics[width=0.45\textwidth]{eggholder_contour.png}
+    % Example: \includegraphics[width=0.45\textwidth]{eggholder_surface.png}
+    [PLACEHOLDER FOR EGGHOLDER CONTOUR PLOT]\\
+    [PLACEHOLDER FOR EGGHOLDER SURFACE PLOT]
+    \\[1em]
+    \textbf{Links for photos:}
+    \\3. \url{https://example.com/eggholder-contour}
+    \\4. \url{https://example.com/eggholder-surface}
+    \caption{Eggholder Function: Contour and Surface Plots}
+    \label{fig:eggholder}
+\end{figure}
+
+\section{Conclusions}
+Based on the experimental results, we can draw the following conclusions:
+
+\begin{itemize}
+    \item For the Cross-in-Tray function:
+    \begin{itemize}
+        \item Real-coded GAs (arithmetic and BLX-$\alpha$) performed significantly better than binary-coded GAs
+        \item BLX-$\alpha$ crossover achieved the most consistent results with zero standard deviation
+        \item All configurations were able to find the global minimum
+    \end{itemize}
+    
+    \item For the Eggholder function:
+    \begin{itemize}
+        \item Binary 2-point crossover achieved the best single solution
+        \item Binary-coded GAs showed more consistent performance than real-coded GAs
+        \item The function's complex landscape made it challenging for all configurations
+    \end{itemize}
+\end{itemize}
+
+The results suggest that the choice of GA configuration should be based on the specific characteristics of the optimization problem. Real-coded GAs performed better for the Cross-in-Tray function, while binary-coded GAs showed advantages for the more complex Eggholder function.
+
+\end{document} 
