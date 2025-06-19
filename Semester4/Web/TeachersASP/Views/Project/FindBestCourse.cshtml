@@ -1,0 +1,62 @@
+@model ExamAsp.Models.ViewModels.AppViewModel
+
+@{
+    ViewData["Title"] = "Hotels";
+}
+
+<div class="container">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <h2 class="mb-4">Welcome, @Model.CurrentUserName</h2>
+
+    <div class="row">
+        <!-- All Hotels Section -->
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h3>All Projects</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>@Model.BestCourse.id</td>
+                                        <td>@Model.BestCourse.title</td>
+                                        <td>@Model.BestCourse.description</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    @* <!-- Add Cancel All Reservations Button -->
+                <div class="mb-3">
+                    <form asp-action="CancelAllReservations" method="post" style="display: inline;">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel ALL your reservations? This action cannot be undone.')">
+                            Cancel All My Reservations
+                        </button>
+                    </form>
+                </div> *@
+            </div>
+        </div>
+    </div>
+</div>
