@@ -1,0 +1,8 @@
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.csproj.AssemblyReference.cache
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.AssemblyInfoInputs.cache
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.AssemblyInfo.cs
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.csproj.CoreCompileInputs.cache
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.MvcApplicationPartsAssemblyInfo.cache
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.RazorAssemblyInfo.cache
+H:\XAMPP\htdocs\Lab8\LogManagementSystem\obj\Debug\net9.0\LogManagementSystem.RazorAssemblyInfo.cs
