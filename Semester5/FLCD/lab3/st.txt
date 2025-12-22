@@ -1,0 +1,9 @@
+# Symbol Table (hash table)
+# size=7 capacity=211
+a -> (8,0)
+b -> (9,0)
+"Good triangle" -> (92,0)
+2 -> (172,0)
+5 -> (175,0)
+7 -> (177,0)
+"Bad triangle" -> (187,0)

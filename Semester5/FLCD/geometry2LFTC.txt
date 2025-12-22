@@ -1,0 +1,7 @@
+float a = 5;
+float b = 7;
+
+if 2 * pythagoras(a, b) > area_triangle(a, b)
+    write("Good triangle");
+else
+    write("Bad triangle");

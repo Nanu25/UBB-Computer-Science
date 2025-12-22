@@ -1,0 +1,8 @@
+float a;
+read(a);
+
+// Unterminated string (missing closing quote)
+write("Hello);
+
+// Unrecognized character '@'
+a = 10 @ 2;

@@ -1,0 +1,13 @@
+float a;
+read(a);
+
+float b;
+read(b);
+
+write("Hypotenuse is: ");
+write(pythagoras(a, b));
+
+write("Area of triangle is: ");
+write(area_triangle(a, b));
+
+

@@ -1,0 +1,6 @@
+# Symbol Table (hash table)
+# size=4 capacity=211
+a -> (8,0)
+b -> (9,0)
+"Hypotenuse is: " -> (10,0)
+"Area of triangle is: " -> (197,0)

@@ -1,0 +1,3 @@
+float variable123 = 42;
+float _bad = 5;
+float 1bad = 10;

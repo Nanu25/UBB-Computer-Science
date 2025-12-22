@@ -1,0 +1,70 @@
+program -> statement_list
+statement_list -> statement statement_list_tail
+statement -> declaration_statement
+declaration_statement -> type identifier declaration_tail
+type -> float
+declaration_tail -> ;
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> read ( identifier ) ;
+statement_list_tail -> statement statement_list_tail
+statement -> declaration_statement
+declaration_statement -> type identifier declaration_tail
+type -> float
+declaration_tail -> ;
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> read ( identifier ) ;
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> write ( expression ) ;
+expression -> term expression_tail
+term -> factor term_tail
+factor -> string_const
+term_tail -> epsilon
+expression_tail -> epsilon
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> write ( expression ) ;
+expression -> term expression_tail
+term -> factor term_tail
+factor -> pythagoras ( expression , expression )
+expression -> term expression_tail
+term -> factor term_tail
+factor -> identifier
+term_tail -> epsilon
+expression_tail -> epsilon
+expression -> term expression_tail
+term -> factor term_tail
+factor -> identifier
+term_tail -> epsilon
+expression_tail -> epsilon
+term_tail -> epsilon
+expression_tail -> epsilon
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> write ( expression ) ;
+expression -> term expression_tail
+term -> factor term_tail
+factor -> string_const
+term_tail -> epsilon
+expression_tail -> epsilon
+statement_list_tail -> statement statement_list_tail
+statement -> io_statement
+io_statement -> write ( expression ) ;
+expression -> term expression_tail
+term -> factor term_tail
+factor -> area_triangle ( expression , expression )
+expression -> term expression_tail
+term -> factor term_tail
+factor -> identifier
+term_tail -> epsilon
+expression_tail -> epsilon
+expression -> term expression_tail
+term -> factor term_tail
+factor -> identifier
+term_tail -> epsilon
+expression_tail -> epsilon
+term_tail -> epsilon
+expression_tail -> epsilon
+statement_list_tail -> epsilon

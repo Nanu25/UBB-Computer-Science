@@ -1,0 +1,21 @@
+FINITE AUTOMATON FOR IDENTIFIER
+===============================
+
+States: {q0, q1}
+Start state: q0
+Final states: {q1}
+
+Transitions:
+- q0 --letter--> q1
+- q1 --letter--> q1
+- q1 --digit--> q1
+- q1 --underscore--> q1
+
+Examples that match:
+- "a" (q0->q1)
+- "variable1" (q0->q1->q1->q1->q1->q1->q1->q1->q1)
+- "my_var" (q0->q1->q1->q1->q1->q1->q1)
+
+Examples that DON'T match:
+- "1variable" (starts with digit)
+- "_var" (starts with underscore)

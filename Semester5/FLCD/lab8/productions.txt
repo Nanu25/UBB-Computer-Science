@@ -1,0 +1,57 @@
+type -> float
+factor -> int_const
+term -> factor
+expression -> term
+declaration_statement -> type identifier = expression ;
+statement -> declaration_statement
+statement_list -> statement
+io_statement -> read ( identifier ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+type -> float
+factor -> int_const
+term -> factor
+expression -> term
+declaration_statement -> type identifier = expression ;
+statement -> declaration_statement
+statement_list -> statement_list statement
+io_statement -> read ( identifier ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+factor -> string_const
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+factor -> identifier
+term -> factor
+expression -> term
+factor -> identifier
+term -> factor
+expression -> term
+factor -> pythagoras ( expression , expression )
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+factor -> string_const
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+factor -> identifier
+term -> factor
+expression -> term
+factor -> identifier
+term -> factor
+expression -> term
+factor -> area_triangle ( expression , expression )
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+statement_list -> statement_list statement
+program -> statement_list

@@ -1,0 +1,19 @@
+REGULAR GRAMMAR FOR IDENTIFIER
+==============================
+
+Non-terminals: {q0, q1}
+Terminals: {letter, digit, underscore}
+Start symbol: q0
+
+Production rules:
+1. q0 → letter q1
+2. q1 → letter q1
+3. q1 → digit q1
+4. q1 → underscore q1
+5. q1 → ε
+
+Derivation examples:
+- "a": q0 → letter q1 → letter ε = "a"
+- "ab": q0 → letter q1 → letter letter q1 → letter letter ε = "ab"
+- "a1": q0 → letter q1 → letter digit q1 → letter digit ε = "a1"
+- "a_b": q0 → letter q1 → letter underscore q1 → letter underscore letter q1 → letter underscore letter ε = "a_b"

@@ -1,0 +1,90 @@
+<program> ::= <statement-list>
+<statement-list> ::= <statement> | <statement> <statement-list>
+
+<statement> ::= <assignment_statement> | <if_statement> | <while_statement> | <io_statement> | <declaration_statement>| <geometry_statement>
+
+<assignment_statement> ::= <identifier> = <expression> 
+<if_statement> ::= IF <condition> THEN <statement-list>  | IF <condition> THEN <statement-list> ELSE <statement-list>
+<while_statement> ::= WHILE <condition> DO <statement-list>
+<io_statement> ::= write <expression>; | read <identifier>;
+<declaration_statement> ::= <type> <identifier> = <expression> ;
+
+<geometry_statement> ::= area_triangle ( <expression> , <expression> ) ; | pythagoras ( <expression> , <expression> ) ;
+
+<identifier> ::= <letter> | <identifier> <letter> | <identifier> <digit> | <identifier> <underscore>
+<expression> ::= <term> | <expression> <addition_operator> <term>
+<term> ::= <factor> | <term> <multiplication_operator> <factor>
+<factor> ::= <identifier> | <constant> | sqrt ( <expression> ) | ( <expression> )
+
+<condition> ::= <expression> <relational_operator> <expression>
+
+<type> ::= int | float | string | char
+<letter> ::= a | b | ... | z | A | B | ... | Z
+<digit> ::= 0 | 1 | ... | 9
+<underscore> ::= _
+
+<relational_operator> ::= == | != | < | > | <= | >=
+<addition_operator> ::= + | -
+<multiplication_operator> ::= * | / | %
+<logical_operator> ::= && | ||
+
+______________________________________________________
+
+Mini Language for Basic Geometry Computations
+
+This mini programming language is designed for simple mathematical and geometric computations.
+It allows users to declare variables, read input, perform calculations, and display results.
+The main purpose is to make basic geometry operations (such as calculating triangle area or applying the Pythagoras theorem) easy and intuitive for learners or quick scripting.
+
+_______________________________________________________
+Alphabet
+
+letter = 'a' | 'b' | ... | 'z' | 'A' | 'B' | ... | 'Z'
+digit = '0' | '1' | ... | '9
+underscore = '_'
+space = ' '
+newline = '\n'
+
+Lexic
+Special tokens:
+Operators:
++ - * / % = == != < > <= >= && ||
+Separators:
+(){};,space newline
+
+Reserved words:
+int float char string const
+if else while read write
+sqrt area_triangle pythagoras
+
+Identifiers
+A sequence of letters, digits, or underscores, starting with a letter.
+identifier = letter | letter { letter | digit | underscore }
+
+Examples:
+a, side1, triangle_base, hypo1
+
+Constants
+Integer constant:
+int_const = ['-'] non_zero_digit { digit } | '0'
+non_zero_digit = '1' | '2' | ... | '9'
+
+Example: 0, -3, 125
+
+Float constant:
+
+float_const = ['-'] digit { digit } '.' digit { digit }
+
+Example: 3.14, -0.5
+
+Character constant:
+char_const = letter | digit | underscore
+
+Example: 'A', 'b', '_'
+
+String constant:
+
+string_const = """ { letter | digit | underscore | space } """
+
+
+Example: "Hello", "Triangle area"

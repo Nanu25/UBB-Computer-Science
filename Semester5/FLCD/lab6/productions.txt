@@ -1,0 +1,50 @@
+type -> float
+factor -> int_const
+term -> factor
+expression -> term
+declaration_statement -> type identifier = expression ;
+statement -> declaration_statement
+statement_list -> statement
+type -> float
+factor -> int_const
+term -> factor
+expression -> term
+declaration_statement -> type identifier = expression ;
+statement -> declaration_statement
+statement_list -> statement_list statement
+factor -> int_const
+term -> factor
+factor -> identifier
+term -> factor
+expression -> term
+factor -> identifier
+term -> factor
+expression -> term
+factor -> pythagoras ( expression , expression )
+term -> term * factor
+expression -> term
+relational_operator -> >
+factor -> identifier
+term -> factor
+expression -> term
+factor -> identifier
+term -> factor
+expression -> term
+factor -> area_triangle ( expression , expression )
+term -> factor
+expression -> term
+condition -> expression relational_operator expression
+factor -> string_const
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+factor -> string_const
+term -> factor
+expression -> term
+io_statement -> write ( expression ) ;
+statement -> io_statement
+if_statement -> IF condition statement ELSE statement
+statement -> if_statement
+statement_list -> statement_list statement
+program -> statement_list
