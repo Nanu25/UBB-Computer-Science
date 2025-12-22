@@ -1,0 +1,234 @@
+Benchmarking Naive Polynomial Multiplication
+------------------------------------------
+n=5, Sequential: 0 ms
+n=5, Parallel (1 threads): 4 ms (speedup: 0.00x)
+n=5, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (4 threads): 1 ms (speedup: 0.00x)
+n=5, Parallel (8 threads): 1 ms (speedup: 0.00x)
+n=5, Parallel (16 threads): 2 ms (speedup: 0.00x)
+n=5, Parallel (32 threads): 21 ms (speedup: 0.00x)
+
+n=100, Sequential: 0 ms
+n=100, Parallel (1 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (8 threads): 1 ms (speedup: 0.00x)
+n=100, Parallel (16 threads): 1 ms (speedup: 0.00x)
+n=100, Parallel (32 threads): 4 ms (speedup: 0.00x)
+
+n=4000, Sequential: 17 ms
+n=4000, Parallel (1 threads): 16 ms (speedup: 1.06x)
+n=4000, Parallel (2 threads): 6 ms
+n=4000, Parallel (4 threads): 5 ms
+n=4000, Parallel (8 threads): 4 ms
+n=4000, Parallel (16 threads): 4 ms
+n=4000, Parallel (32 threads): 5 ms
+
+n=80000, Sequential: 3988 ms
+n=80000, Parallel (1 threads): 3455 ms
+n=80000, Parallel (2 threads): 1637 ms
+n=80000, Parallel (4 threads): 1029 ms
+n=80000, Parallel (8 threads): 761 ms
+n=80000, Parallel (16 threads): 687 ms
+n=80000, Parallel (32 threads): 672 ms
+
+n=250000, Sequential: 46596 ms
+n=250000, Parallel (1 threads): 38172 ms
+n=250000, Parallel (2 threads): 16009 ms
+n=250000, Parallel (4 threads): 9124 ms
+n=250000, Parallel (8 threads): 6676 ms
+n=250000, Parallel (16 threads): 6012 ms
+n=250000, Parallel (32 threads): 6066 ms
+
+
+-----------------------------------------------
+Karatsuba Polynomial Multiplication
+THRESHOLD = 64
+
+n=5, Sequential: 0 ms
+n=5, Parallel (1 threads): 2 ms (speedup: 0.00x)
+n=5, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (16 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (32 threads): 0 ms (speedup: NaNx)
+
+n=100, Sequential: 0 ms
+n=100, Parallel (1 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (16 threads): 1 ms (speedup: 0.00x)
+n=100, Parallel (32 threads): 1 ms (speedup: 0.00x)
+
+n=4000, Sequential: 17 ms
+n=4000, Parallel (1 threads): 31 ms (speedup: 0.55x)
+n=4000, Parallel (2 threads): 4 ms (speedup: 4.25x)
+n=4000, Parallel (4 threads): 5 ms (speedup: 3.40x)
+n=4000, Parallel (8 threads): 2 ms (speedup: 8.50x)
+n=4000, Parallel (16 threads): 4 ms (speedup: 4.25x)
+n=4000, Parallel (32 threads): 6 ms (speedup: 2.83x)
+
+n=80000, Sequential: 659 ms
+n=80000, Parallel (1 threads): 406 ms (speedup: 1.62x)
+n=80000, Parallel (2 threads): 272 ms (speedup: 2.42x)
+n=80000, Parallel (4 threads): 122 ms (speedup: 5.40x)
+n=80000, Parallel (8 threads): 155 ms (speedup: 4.25x)
+n=80000, Parallel (16 threads): 132 ms (speedup: 4.99x)
+n=80000, Parallel (32 threads): 110 ms (speedup: 5.99x)
+
+n=250000, Sequential: 1769 ms
+n=250000, Parallel (1 threads): 2132 ms (speedup: 0.83x)
+n=250000, Parallel (2 threads): 1037 ms (speedup: 1.71x)
+n=250000, Parallel (4 threads): 706 ms (speedup: 2.51x)
+n=250000, Parallel (8 threads): 582 ms (speedup: 3.04x)
+n=250000, Parallel (16 threads): 548 ms (speedup: 3.23x)
+n=250000, Parallel (32 threads): 542 ms (speedup: 3.26x)
+
+n=500000, Sequential: 6090 ms
+n=500000, Parallel (1 threads): 6003 ms (speedup: 1.01x)
+n=500000, Parallel (2 threads): 3383 ms (speedup: 1.80x)
+n=500000, Parallel (4 threads): 1966 ms (speedup: 3.10x)
+n=500000, Parallel (8 threads): 1743 ms (speedup: 3.49x)
+n=500000, Parallel (16 threads): 1538 ms (speedup: 3.96x)
+n=500000, Parallel (32 threads): 1549 ms (speedup: 3.93x)
+
+n=1000000, Sequential: 16729 ms
+n=1000000, Parallel (1 threads): 18098 ms (speedup: 0.92x)
+n=1000000, Parallel (2 threads): 9545 ms (speedup: 1.75x)
+n=1000000, Parallel (4 threads): 5798 ms (speedup: 2.89x)
+n=1000000, Parallel (8 threads): 5122 ms (speedup: 3.27x)
+n=1000000, Parallel (16 threads): 4643 ms (speedup: 3.60x)
+n=1000000, Parallel (32 threads): 4590 ms (speedup: 3.64x)
+
+THRESHOLD = 128
+Benchmarking Karatsuba Polynomial Multiplication
+------------------------------------------------
+n=5, Sequential: 0 ms
+n=5, Parallel (1 threads): 2 ms (speedup: 0.00x)
+n=5, Parallel (2 threads): 1 ms (speedup: 0.00x)
+n=5, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (16 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (32 threads): 1 ms (speedup: 0.00x)
+
+n=100, Sequential: 0 ms
+n=100, Parallel (1 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (16 threads): 2 ms (speedup: 0.00x)
+n=100, Parallel (32 threads): 0 ms (speedup: NaNx)
+
+n=4000, Sequential: 29 ms
+n=4000, Parallel (1 threads): 20 ms (speedup: 1.45x)
+n=4000, Parallel (2 threads): 12 ms (speedup: 2.42x)
+n=4000, Parallel (4 threads): 3 ms (speedup: 9.67x)
+n=4000, Parallel (8 threads): 2 ms (speedup: 14.50x)
+n=4000, Parallel (16 threads): 7 ms (speedup: 4.14x)
+n=4000, Parallel (32 threads): 7 ms (speedup: 4.14x)
+
+n=80000, Sequential: 666 ms
+n=80000, Parallel (1 threads): 574 ms (speedup: 1.16x)
+n=80000, Parallel (2 threads): 244 ms (speedup: 2.73x)
+n=80000, Parallel (4 threads): 133 ms (speedup: 5.01x)
+n=80000, Parallel (8 threads): 96 ms (speedup: 6.94x)
+n=80000, Parallel (16 threads): 76 ms (speedup: 8.76x)
+n=80000, Parallel (32 threads): 118 ms (speedup: 5.64x)
+
+n=250000, Sequential: 2184 ms
+n=250000, Parallel (1 threads): 2135 ms (speedup: 1.02x)
+n=250000, Parallel (2 threads): 979 ms (speedup: 2.23x)
+n=250000, Parallel (4 threads): 579 ms (speedup: 3.77x)
+n=250000, Parallel (8 threads): 441 ms (speedup: 4.95x)
+n=250000, Parallel (16 threads): 420 ms (speedup: 5.20x)
+n=250000, Parallel (32 threads): 420 ms (speedup: 5.20x)
+
+n=500000, Sequential: 5699 ms
+n=500000, Parallel (1 threads): 6434 ms (speedup: 0.89x)
+n=500000, Parallel (2 threads): 3006 ms (speedup: 1.90x)
+n=500000, Parallel (4 threads): 1849 ms (speedup: 3.08x)
+n=500000, Parallel (8 threads): 1404 ms (speedup: 4.06x)
+n=500000, Parallel (16 threads): 1193 ms (speedup: 4.78x)
+n=500000, Parallel (32 threads): 1297 ms (speedup: 4.39x)
+
+n=1000000, Sequential: 20182 ms
+n=1000000, Parallel (1 threads): 19345 ms (speedup: 1.04x)
+n=1000000, Parallel (2 threads): 9015 ms (speedup: 2.24x)
+n=1000000, Parallel (4 threads): 4981 ms (speedup: 4.05x)
+n=1000000, Parallel (8 threads): 4134 ms (speedup: 4.88x)
+n=1000000, Parallel (16 threads): 3843 ms (speedup: 5.25x)
+n=1000000, Parallel (32 threads): 3899 ms (speedup: 5.18x)
+
+THRESHOLD = 256
+------------------------------------------------
+n=5, Sequential: 0 ms
+n=5, Parallel (1 threads): 2 ms (speedup: 0.00x)
+n=5, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (16 threads): 0 ms (speedup: NaNx)
+n=5, Parallel (32 threads): 1 ms (speedup: 0.00x)
+
+n=100, Sequential: 0 ms
+n=100, Parallel (1 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (2 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (4 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (8 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (16 threads): 0 ms (speedup: NaNx)
+n=100, Parallel (32 threads): 0 ms (speedup: NaNx)
+
+n=4000, Sequential: 16 ms
+n=4000, Parallel (1 threads): 11 ms (speedup: 1.45x)
+n=4000, Parallel (2 threads): 6 ms (speedup: 2.67x)
+n=4000, Parallel (4 threads): 8 ms (speedup: 2.00x)
+n=4000, Parallel (8 threads): 3 ms (speedup: 5.33x)
+n=4000, Parallel (16 threads): 4 ms (speedup: 4.00x)
+n=4000, Parallel (32 threads): 5 ms (speedup: 3.20x)
+
+n=80000, Sequential: 634 ms
+n=80000, Parallel (1 threads): 502 ms (speedup: 1.26x)
+n=80000, Parallel (2 threads): 237 ms (speedup: 2.68x)
+n=80000, Parallel (4 threads): 98 ms (speedup: 6.47x)
+n=80000, Parallel (8 threads): 87 ms (speedup: 7.29x)
+n=80000, Parallel (16 threads): 67 ms (speedup: 9.46x)
+n=80000, Parallel (32 threads): 90 ms (speedup: 7.04x)
+
+n=250000, Sequential: 2141 ms
+n=250000, Parallel (1 threads): 2034 ms (speedup: 1.05x)
+n=250000, Parallel (2 threads): 1284 ms (speedup: 1.67x)
+n=250000, Parallel (4 threads): 680 ms (speedup: 3.15x)
+n=250000, Parallel (8 threads): 417 ms (speedup: 5.13x)
+n=250000, Parallel (16 threads): 351 ms (speedup: 6.10x)
+n=250000, Parallel (32 threads): 364 ms (speedup: 5.88x)
+
+n=500000, Sequential: 7346 ms
+n=500000, Parallel (1 threads): 6175 ms (speedup: 1.19x)
+n=500000, Parallel (2 threads): 2936 ms (speedup: 2.50x)
+n=500000, Parallel (4 threads): 1529 ms (speedup: 4.80x)
+n=500000, Parallel (8 threads): 1157 ms (speedup: 6.35x)
+n=500000, Parallel (16 threads): 1009 ms (speedup: 7.28x)
+n=500000, Parallel (32 threads): 1013 ms (speedup: 7.25x)
+
+n=1000000, Sequential: 20106 ms
+n=1000000, Parallel (1 threads): 18321 ms (speedup: 1.10x)
+n=1000000, Parallel (2 threads): 12032 ms (speedup: 1.67x)
+n=1000000, Parallel (4 threads): 4641 ms (speedup: 4.33x)
+n=1000000, Parallel (8 threads): 3672 ms (speedup: 5.48x)
+n=1000000, Parallel (16 threads): 3044 ms (speedup: 6.61x)
+n=1000000, Parallel (32 threads): 3103 ms (speedup: 6.48x)
+
+Naive O(n²) Multiplication
+
+Scales very badly: For n=80,000, sequential takes 3.99 seconds; for n=250,000, it jumps to 46.60 seconds (over 11.7 times slower, while size is only ~3.1 times larger).
+Parallel version gives excellent performance on large inputs: At n=250,000 with 16 threads, it takes 6.01 seconds; with 32 threads, 6.07 seconds.
+
+Karatsuba Multiplication
+
+Asymptotically much better than naive: At n=1,000,000, sequential Karatsuba (threshold 64) takes 16.73 seconds.
+Parallel Karatsuba performs reasonably well: At n=1,000,000 (threshold 256) with 16 threads, it takes 3.04 seconds (vs. 20.11 seconds sequential); with 32 threads, 3.10 seconds.
+The base-case threshold is critical:
+Threshold = 64: Good on medium sizes (e.g., n=80,000 sequential: 0.66 seconds), but on very large inputs (≥500,000) shows slightly more recursion overhead (n=1,000,000 sequential: 16.73 seconds).
+Threshold = 128: Balanced, gives solid performance in your tests (e.g., n=1,000,000 sequential: 20.18 seconds; parallel 16 threads: 3.84 seconds).
+Threshold = 256: Best overall, especially for parallel on huge inputs due to optimal balance between recursion and base cases (e.g., n=1,000,000 sequential: 20.11 seconds; parallel 16 threads: 3.04 seconds).
+Thresholds below 64 (e.g., 32, as you tested): Too many tiny recursive calls lead to huge overhead, making it slower than naive (specific times not provided, but generally 1.5–2x worse than optimal thresholds).

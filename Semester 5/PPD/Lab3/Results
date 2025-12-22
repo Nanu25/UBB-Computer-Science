@@ -1,0 +1,128 @@
+Matrix Size: 5x5
+--------------------------------------------------------------------------------
+
+Approach: ROW
+Threads    Time (ms)
+1          0.96
+2          0.34
+4          0.50
+8          0.90
+16         1.62
+32         5.36
+
+Approach: COLUMN
+Threads    Time (ms)
+1          1.16
+2          0.52
+4          1.47
+8          0.99
+16         1.84
+32         4.20
+
+Approach: STRIDED
+Threads    Time (ms)
+1          1.37
+2          0.43
+4          0.62
+8          1.10
+16         1.86
+32         5.31
+
+Matrix Size: 100x100
+--------------------------------------------------------------------------------
+
+Approach: ROW
+Threads    Time (ms)
+1          3.88
+2          5.89
+4          1.11
+8          1.21
+16         2.92
+32         3.94
+
+Approach: COLUMN
+Threads    Time (ms)
+1          1.12
+2          1.04
+4          1.05
+8          1.17
+16         2.00
+32         3.76
+
+Approach: STRIDED
+Threads    Time (ms)
+1          1.24
+2          1.31
+4          2.22
+8          2.33
+16         2.62
+32         3.62
+
+Matrix Size: 500x500
+--------------------------------------------------------------------------------
+
+Approach: ROW
+Threads    Time (ms)
+1          162.32
+2          100.14
+4          61.78
+8          41.57
+16         43.60
+32         42.21
+
+Approach: COLUMN
+Threads    Time (ms)
+1          152.73
+2          86.15
+4          59.33
+8          41.26
+16         40.72
+32         35.59
+
+Approach: STRIDED
+Threads    Time (ms)
+1          141.56
+2          91.25
+4          43.93
+8          42.46
+16         43.40
+32         36.72
+
+Matrix Size: 1000x1000
+--------------------------------------------------------------------------------
+
+Approach: ROW
+Threads    Time (ms)
+1          2007.67
+2          1126.99
+4          410.46
+8          483.72
+16         472.55
+32         452.98
+
+Approach: COLUMN
+Threads    Time (ms)
+1          1765.65
+2          697.89
+4          365.89
+8          439.77
+16         425.12
+32         426.97
+
+Approach: STRIDED
+Threads    Time (ms)
+1          1935.81
+2          1110.33
+4          693.68
+8          522.51
+16         606.64
+32         548.03
+
+================================================================================
+Analysis:
+- ROW approach: Best cache locality (consecutive memory access)
+- COLUMN approach: Moderate cache locality (jumping between rows)
+- STRIDED approach: Worst cache locality (large memory jumps)
+
+Parallelization only helps for large matrices (500×500+), with optimal performance at 4-8 threads;
+ beyond this, thread overhead outweighs benefits, and cache locality differences between approaches become negligible at scale.

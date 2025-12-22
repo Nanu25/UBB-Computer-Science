@@ -1,0 +1,48 @@
+==================================
+      PERFORMANCE SUMMARY (50 runs)
+      With checks of stopped threads
+======================================
+Threads  1 → Min:  403 ms | Max:  754 ms | Avg: 486.74 ms
+Threads  2 → Min:  402 ms | Max:  709 ms | Avg: 476.98 ms
+Threads  4 → Min:    1 ms | Max:   54 ms | Avg: 3.68 ms
+Threads  8 → Min:    1 ms | Max:   16 ms | Avg: 2.54 ms
+Threads 16 → Min:    1 ms | Max:    9 ms | Avg: 2.82 ms
+Threads 32 → Min:    2 ms | Max:   18 ms | Avg: 4.84 ms
+======================================
+
+      PERFORMANCE SUMMARY (50 runs)
+======================================
+Threads  1 → Min:  401 ms | Max:  685 ms | Avg: 461.26 ms
+Threads  2 → Min:  387 ms | Max:  704 ms | Avg: 477.96 ms
+Threads  4 → Min:    0 ms | Max:   58 ms | Avg: 3.36 ms
+Threads  8 → Min:    1 ms | Max:    8 ms | Avg: 2.10 ms
+Threads 16 → Min:    1 ms | Max:   10 ms | Avg: 2.88 ms
+Threads 32 → Min:    2 ms | Max:   21 ms | Avg: 4.52 ms
+======================================
+
+
+======================================
+      PERFORMANCE SUMMARY (50 runs)
+        Fork Join
+======================================
+Threads  1 → Min:  394 ms | Max:  666 ms | Avg: 475.36 ms
+Threads  2 → Min:  390 ms | Max:  647 ms | Avg: 435.80 ms
+Threads  4 → Min:    1 ms | Max:   63 ms | Avg: 3.02 ms
+Threads  8 → Min:    0 ms | Max:    3 ms | Avg: 1.30 ms
+Threads 16 → Min:    0 ms | Max:    5 ms | Avg: 1.32 ms
+Threads 32 → Min:    1 ms | Max:    5 ms | Avg: 2.18 ms
+======================================
+
+
+======================================
+      PERFORMANCE SUMMARY (50 runs)
+      Fork Join without checks of stopped threads
+======================================
+Threads  1 → Min:  420 ms | Max:  713 ms | Avg: 512.02 ms
+Threads  2 → Min:  406 ms | Max:  835 ms | Avg: 514.62 ms
+Threads  4 → Min:    1 ms | Max:   52 ms | Avg: 3.24 ms
+Threads  8 → Min:    1 ms | Max:    7 ms | Avg: 2.10 ms
+Threads 16 → Min:    1 ms | Max:    9 ms | Avg: 2.80 ms
+Threads 32 → Min:    2 ms | Max:   20 ms | Avg: 4.56 ms
+======================================
+

@@ -1,0 +1,199 @@
+If i have a small number of accounts and a lot of transactions (10 accounts, 10000000 transactions) ->
+
+Bank Transfer Simulation with Concurrent Threads
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 1
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 8, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.790 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 2
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 13, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.341 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 4
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 13, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.330 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 8
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 13, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.427 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 16
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 14, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.440 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 10
+  Threads: 50
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+Consistency checker thread started.
+Consistency checker thread finished. Checks passed: 14, Checks failed: 0
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.521 seconds
+
+
+If i have a lot of accounts and a big number of transcations (100000 accounts, 10000000 transactions) ->
+Bank Transfer Simulation with Concurrent Threads
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 1
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 1.760 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 2
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.645 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 4
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.329 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 8
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.242 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 16
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.289 seconds
+
+======================================================================
+SIMULATION PARAMETERS:
+  Accounts: 100000
+  Threads: 50
+  Total Transactions: 10000000
+  Initial balance per account: $10000
+======================================================================
+
+Initial consistency check: PASSED
+
+Final consistency check: PASSED
+
+Performance Metrics:
+  Total time: 0.363 seconds
