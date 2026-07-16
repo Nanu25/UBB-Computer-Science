@@ -30,3 +30,18 @@
        		- swap project: Market Minds (https://github.com/Nanu25/UBB-SE-2025-MarketMinds)
            	- first merge: Market Messi (https://github.com/Nanu25/UBB-SE-2025-MarketMessi)
            	- Final merge: Marketplace (https://github.com/Nanu25/UBB-SE-2025-Marketplace)
+- 📕 Semester 5
+	- ☁️ Cloud Application Architecture
+	- ⚙️ Formal Languages and Compiler Design
+	- 🧩 Intelligent Methods for Solving Real-World Problems
+	- 💼 Internship
+	- ⚡ Parallel and Distributed Programming
+	- 📱 Mobile Programming
+	- 👥 [Collective Project](https://github.com/alextm0/event-ticket-platform-backend)
+- 📕 Semester 6
+	- 🔢 Numerical Calculus
+	- 👁️ Computer Vision and Deep Learning
+	- 🎨 [Design Patterns](https://github.com/alextm0/proxy-presentation)
+	- 🎓 BSc Thesis Preparation
+	- ⚖️ [Academic Ethics and Integrity in Computer Science](https://github.com/mihaicristianfarcas/Ethics-In-Computer-Science-presentation)
+	- 🔍 [Software Systems Verification and Validation](https://github.com/mihaicristianfarcas/SSVV-TakeHome-Exam)
