@@ -34,7 +34,6 @@
 	- ☁️ Cloud Application Architecture
 	- ⚙️ Formal Languages and Compiler Design
 	- 🧩 Intelligent Methods for Solving Real-World Problems
-	- 💼 Internship
 	- ⚡ Parallel and Distributed Programming
 	- 📱 Mobile Programming
 	- 👥 [Collective Project](https://github.com/alextm0/event-ticket-platform-backend)
